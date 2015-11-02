@@ -1,0 +1,1649 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title> PHRSC - PRIMET Historic Radiation Shield Comparison Test Site - Fox Peterson </title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="impress.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<!--
+    When impress.js script detects that browser supports all required features, this class name will
+    be removed.
+    
+    The class name on body element also depends on currently active presentation step. More details about it can be found later, when `hint` element is being described.
+    
+-->
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!--
+        All impress.js driven slides must go inside a div id = "impress". Just one big-ass div.
+-->
+<div id="impress">
+    <script src="d3.js"></script>
+    <script src="d3-tip.js"></script>
+    <script src="jquery.js"></script>
+    <!--
+        
+        Here is where interesting thing start to happen.
+        
+        Each step of the presentation should be an element inside the `#impress` with a class name
+        of `step`. These step elements are positioned, rotated and scaled by impress.js, and
+        the 'camera' shows them on each step of the presentation.
+        Positioning information is passed through data attributes.
+        
+    -->
+
+    <div id="slide0" class="step" data-x="-7000" data-y="-1500">
+        <!-- TITLE -->
+        <p style="padding-bottom: 10px; text-align:center; font-family: helvetica neue">Radiometer Side <strong>Up</strong> or Radiometer Side <b>Down</b>?</p>
+        <div id="svg-block" style="display:flex; flex-flow: row no wrap; justify-content: space-around;"><svg version="1.1" baseProfile="full" width="300px" height="300px" viewbox = "0 0 100 100" class="svg1" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+                <![CDATA[
+                @keyframes moveup{0% {transform: translateY(100px);}50% { transform: translateY(55px);}75%{opacity:0.5;}100% {transform: translateY(-10px);}}
+                #breeze{fill:cyan;}
+                #mercury2{fill: red;}
+                .arrow{fill:red; animation: moveup 2s ease-in-out infinite;}
+                .svg1{
+                    display: block;
+                    flex-flow: row no wrap;
+                    justify-content: space-around;
+                }
+                ]]>
+            </style>
+            <g class="thermometer"><path d="m 69.172,77.217 0,-20.215 c 0,-4.38 -3.564,-7.943 -7.945,-7.943 -4.379,0 -7.939,3.565 -7.939,7.943 l 0,20.219 c -2.378,2.182 -3.775,5.266 -3.775,8.579 0,6.459 5.259,11.72 11.718,11.72 6.459,0 11.715,-5.261 11.715,-11.72 -0.001,-3.314 -1.395,-6.401 -3.774,-8.583 z m -7.943,17.121 c -4.705,0 -8.536,-3.828 -8.536,-8.535 0,-2.852 1.425,-5.471 3.775,-7.051 l 0,-21.747 c 0,-2.627 2.134,-4.765 4.761,-4.765 2.629,0 4.767,2.137 4.767,4.765 l 0,21.747 c 2.349,1.58 3.772,4.199 3.772,7.051 0,4.707 -3.829,8.535 -8.539,8.535 z" id="thermometer"/><path d="m 64.406,79.656 0,-17.289 -6.354,0 0,17.285 c -2.229,1.158 -3.773,3.463 -3.773,6.147 0,3.839 3.113,6.95 6.951,6.95 3.838,0 6.95,-3.112 6.95,-6.95 10e-4,-2.684 -1.543,-4.99 -3.774,-6.143 z" id="mercury"/><path d="m 64.406,79.656 0,-17.289 -6.354,0 0,17.285 c -2.229,1.158 -3.773,3.463 -3.773,6.147 0,3.839 3.113,6.95 6.951,6.95 3.838,0 6.95,-3.112 6.95,-6.95 10e-4,-2.684 -1.543,-4.99 -3.774,-6.143 z" id="mercury2"/> <path d="M 92.595,74.645 85.064,61.594 c -0.661,-1.145 -1.737,-1.145 -2.397,0 L 75.13,74.645 c -0.656,1.141 -0.117,2.073 1.199,2.073 l 0.609,0 c 1.318,0 2.395,1.075 2.395,2.394 l 0,4.336 c 0,1.317 1.078,2.395 2.393,2.395 l 4.276,0 c 1.318,0 2.396,-1.077 2.396,-2.395 l 0,-4.336 c 0,-1.318 1.073,-2.394 2.393,-2.394 l 0.609,0 c 1.316,0 1.852,-0.933 1.195,-2.073 z" class="arrow" /></g><g id="breeze"><path d="m 85.076,17.164 c 1.059,0.419 2.054,0.032 2.227,-0.966 0.174,-0.995 -0.545,-2.252 -1.602,-2.704 C 57.887,1.6 30.069,39.351 2.252,10.707 1.196,9.624 0.199,9.353 0.025,10.234 c -0.173,0.879 0.545,2.62 1.602,3.746 27.817,29.647 55.634,-7.971 83.449,3.184 z" id="path18"/><path d="M 31.83,13.449 C 43.059,11.897 54.287,6.229 65.517,4.075 66.573,3.87 67.569,2.839 67.743,1.73 67.915,0.623 67.197,-0.162 66.139,0.029 54.912,2.05 43.682,7.727 32.454,9.429 c -1.058,0.163 -2.053,1.146 -2.226,2.247 -0.173,1.101 0.544,1.917 1.602,1.773 z" id="path20" /><path d="M 98.374,34.54 C 70.558,4.895 42.741,42.515 14.925,31.359 13.867,30.94 12.87,31.328 12.698,32.324 c -0.172,0.994 0.545,2.252 1.603,2.707 27.816,11.893 55.631,-25.859 83.447,2.786 1.059,1.082 2.056,1.354 2.227,0.472 0.171,-0.88 -0.543,-2.621 -1.601,-3.749 z" id="path22"/><path d="M 89.99,39.315 C 62.174,22.012 34.359,60.318 6.542,38.193 5.484,37.358 4.489,37.331 4.315,38.255 c -0.172,0.922 0.545,2.482 1.604,3.36 27.815,23.038 55.63,-15.226 83.448,1.251 1.056,0.622 2.053,0.437 2.225,-0.528 0.175,-0.959 -0.543,-2.364 -1.602,-3.023 z" id="path24"/><path d="M 38.354,55.368 C 27.126,58.227 15.897,58.45 4.669,48.399 3.612,47.458 2.615,47.328 2.442,48.235 c -0.172,0.902 0.545,2.538 1.602,3.522 11.228,10.436 22.456,10.458 33.685,7.698 1.058,-0.26 2.054,-1.414 2.226,-2.546 0.172,-1.135 -0.544,-1.809 -1.601,-1.541 z" id="path26"/></g></g></svg></div>
+        <p style="padding-top: 10px; font-size: 80%; text-align: center; font-family: helvetica neue;" class="will-disappear">Quantifying radiation shield effectiveness on temperature sensors: the PHRSC experiment</p>
+        <p style="padding-top: 5px; font-size: 40%; text-align: center; font-family: helvetica neue;" class="will-disappear">A data narrative by Fox Peterson, with epic help from Don Henshaw and all the data managers and field techs at the H.J. Andrews Experimental Forest</p>
+        <div style="padding-top: 10px; display: none; font-size: 60%; text-align: center; font-family: helvetica neue;" id="slide0-morphin"><p><em>This machine was so modern, so frightfully new, that nobody knew just what it would do! - Dr. Seuss, The Better Butter Battle Book</em></p></div>
+        <script>
+        $(document).click(function(){
+                $(".will-disappear").fadeToggle("fast");
+                $("#slide0-morphin").fadeToggle("slow");
+        });
+        </script>
+    </div>
+
+    <div id ="slide1" class="step" data-x="-7000" data-y="-500">
+        <!-- HJ ANDREWS MAP -->
+        <p style="font-size:80%; text-align:center; font-family: helvetica neue">At the H.J. Andrews, we have collected air temperature over 50 + years on mountainous terrain:</p>
+
+        <div class="phrscimg" style="padding-top: 5%; padding-bottom: 5%; display:flex; flex-flow: row wrap; justify-content: space-around;"><img src="HJA.png" width="350px" height="350px"></img></div>
+
+        <p style="font-size:80%; text-align:center; font-family: helvetica neue">Our six current primary "met" stations are in <span style="color:red;">red</span> and 30 + ancillary stations are in <span style="color:blue;">blue</span>. Focus on the <span style="color:red;">red</span></p>
+    </div>
+
+    <div id="slide2" class="step" data-x="-8000" data-y="-500">
+        <!-- QUALITY ISSUES -->
+        <div id="svg-block" style="display:flex; flex-flow: row no wrap; justify-content: space-between"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px" version="1.1" viewBox="0 0 100 100" id="cloud-sun"><g><path class="cloud-sun" stroke="yellow" stroke-width="2px" d="M78.1,39.7l2.6-2.2l-4.3-3.7l3.2-4.7l-5.1-2.5l1.9-5.4l-5.6-1.1l0.4-5.7l-5.7,0.4l-1.1-5.6l-5.4,1.9l-2.5-5.1l-4.7,3.2   L48,4.8l-3.7,4.3l-4.7-3.2l-2.5,5.1l-5.4-1.9l-1.1,5.6l-5.7-0.4l0.4,5.7l-5.6,1.1l1.9,5.4L16.4,29l3.2,4.7l-4.3,3.7l4.3,3.7   L16.4,46l5.1,2.5l-1.9,5.4l3,0.6c-0.9,1.6-1.5,3.6-1.5,5.6c0,6.2,5,11.3,11.3,11.3h40c9,0,16.3-7.3,16.3-16.3   C88.8,48,84.3,42,78.1,39.7z M20.1,45l2.8-4.2l-3.8-3.3l3.8-3.3L20.1,30l4.5-2.2L23,23.1l5-0.9l-0.4-5l5,0.4l0.9-5l4.8,1.7l2.2-4.5   l4.2,2.8L48,8.7l3.3,3.8l4.2-2.8l2.2,4.5l4.8-1.7l0.9,5l5-0.4l-0.4,5l5,0.9l-1.7,4.8l4.5,2.2L73,34.2l3.8,3.3L75.1,39   c-0.9-0.1-1.7-0.2-2.6-0.2c-0.6,0-1.2,0-1.9,0.1c-0.5-0.8-1-1.6-1.6-2.3C68.5,25.1,59,16,47.5,16C35.6,16,26,25.6,26,37.5   c0,4.3,1.3,8.3,3.5,11.7c-1.9,0.5-3.7,1.6-5,3L23,51.9l1.7-4.8L20.1,45z M66.1,33.7c-3.8-3.2-8.6-5-13.6-5   c-10.9,0-19.9,8.2-21.1,18.8c-1.8-2.9-2.9-6.4-2.9-10.1c0-10.5,8.5-19,19-19C56.7,18.5,64.4,25,66.1,33.7z M72.5,68.8h-40   c-4.8,0-8.8-3.9-8.8-8.8s3.9-8.8,8.8-8.8h1.3V50c0-10.3,8.4-18.8,18.8-18.8c6.8,0,13,3.7,16.4,9.6l0.4,0.8l0.9-0.1   c0.8-0.1,1.6-0.2,2.3-0.2c7.6,0,13.8,6.2,13.8,13.8S80.1,68.8,72.5,68.8z"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100px" height="100px" viewBox="0 0 100 100"><g class="metstation-1" fill="white" stroke="blue" stroke-width="1px"><path d="M90.32,26.84c0,9.73-6.396,17.966-15.217,20.731L56.027,28.493L35.957,48.562l0,0H21.396v-0.007  c-0.05,0.001-0.099,0.007-0.149,0.007c-6.388,0-11.567-5.178-11.567-11.566s5.179-11.567,11.567-11.567  c0.05,0,0.099,0.007,0.149,0.007v-0.108h3.568c-0.092-0.64-0.156-1.288-0.156-1.953c0-7.495,6.076-13.57,13.57-13.57  c4.779,0,8.973,2.476,11.39,6.21c3.75-6.512,10.776-10.898,18.831-10.898C80.596,5.117,90.32,14.842,90.32,26.84z M35.957,57.014  v12.625V82.26v12.623h3.841V82.26h32.456v12.623h3.842V82.26V69.639V57.014L56.027,36.945L35.957,57.014z"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100px" height="100px" viewBox="0 0 100 100" id="phone"><style type="text/css">
+                <![CDATA[
+                @keyframes glow{0%, 100%{opacity: 0.1;}50%{opacity: 0.8;}}
+                .phone-button{
+                    stroke:yellow;
+                    stroke-width: 10px;
+                    animation: glow 3s ease-in-out infinite;
+                    }
+                ]]>
+            </style>
+        <g class="phone"><path class="outside-phone" d="M63.2,5.6H27.3c-3.5,0-6.3,2.8-6.3,6.3v66.3c0,3.5,2.8,6.3,6.3,6.3h35.9c3.5,0,6.3-2.8,6.3-6.3V11.8   C69.5,8.4,66.7,5.6,63.2,5.6z M65.2,78.2c0,1.1-0.9,1.9-1.9,1.9H27.3c-1.1,0-1.9-0.9-1.9-1.9v-7h39.8V78.2z M25.3,67.7V18.1h39.8   v49.6H25.3z M25.3,11.8c0-1.1,0.9-1.9,1.9-1.9h35.9c1.1,0,1.9,0.9,1.9,1.9v2.8H25.3V11.8z"/><circle class="phone-button" cx="45.3" cy="75.5" r="2.2"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" height="100px" width="100px" viewBox="0 0 100 100" ><g class="tech" stroke="blue" stroke-width="1px" fill="white"><path d="M60.586,22.572c-4.853,0-8.786-3.934-8.786-8.786S55.733,5,60.586,5s8.786,3.934,8.786,8.786S65.438,22.572,60.586,22.572z   M70.618,26.23H50.553c-1.725,0-3.271,0.755-4.332,1.952h3.227c3.969,0,7.198,3.229,7.198,7.198v29.074  c0,3.203-2.112,5.97-5.082,6.881v18.186c0,0.021-0.001,0.043-0.001,0.064c1.004,1.25,2.544,2.05,4.271,2.05h10.012  c3.025,0,5.479-2.453,5.479-5.479V66.834c2.862-0.349,5.081-2.785,5.081-5.742V32.018C76.405,28.821,73.814,26.23,70.618,26.23z   M48.2,17.149c0-4.853-3.934-8.786-8.786-8.786s-8.786,3.934-8.786,8.786s3.934,8.786,8.786,8.786S48.2,22.002,48.2,17.149z   M42.54,50.709c-0.097-0.136-0.285-0.167-0.421-0.07c-0.136,0.098-0.168,0.285-0.07,0.422l6.84,9.584  c0.097,0.137,0.285,0.168,0.422,0.07c0.136-0.097,0.167-0.285,0.07-0.421L42.54,50.709z M55.233,35.381v29.074  c0,2.957-2.218,5.395-5.081,5.742v19.324c0,3.025-2.452,5.479-5.479,5.479H34.662c-3.025,0-5.479-2.453-5.479-5.479V70.237  c-3.104-0.104-5.589-2.652-5.589-5.782V35.381c0-3.196,2.591-5.787,5.787-5.787h20.065C52.643,29.594,55.233,32.185,55.233,35.381z   M39.761,50.586l1.047-0.747l-7.039-9.864l-0.047-0.803l-1.398-1.96c0,0-0.238-0.309-0.475-0.141  c-0.235,0.169-0.926,0.661-1.214,0.866c-0.288,0.206-0.063,0.511-0.063,0.511l1.405,1.969l0.744,0.306L39.761,50.586z M50.059,59.44  l-6.432-9.012c-0.471-0.659-1.388-0.812-2.048-0.342l-1.835,1.31c-0.659,0.471-0.812,1.387-0.342,2.047l6.432,9.012  c0.471,0.66,1.388,0.813,2.048,0.343l1.834-1.31C50.376,61.018,50.529,60.1,50.059,59.44z M40.565,52.119  c-0.097-0.137-0.286-0.168-0.422-0.07c-0.136,0.096-0.167,0.285-0.07,0.421l6.84,9.585c0.098,0.136,0.286,0.167,0.422,0.07  s0.167-0.285,0.07-0.422L40.565,52.119z"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" height="100px" width="100px" viewBox="0 0 100 100"><style type="text/css">
+                <![CDATA[
+                @keyframes gloww{0%, 100%{opacity: 0.4;}50%{opacity: 0.1;}}
+                .wifi{
+                    fill:cyan;
+                    stroke:blue;
+                    stroke-width:2px;
+                    animation: gloww 3s ease-in-out infinite;
+                    }
+                ]]>
+            </style>
+            <g class="wifi"><path class="dot" d="M48.101,59.671c-2.614,0-4.723,2.12-4.723,4.729c0,2.607,2.109,4.727,4.723,4.727   c2.612,0,4.725-2.119,4.725-4.727C52.825,61.791,50.713,59.671,48.101,59.671z"/><path class="rim" d="M69.968,39.934c-12.087-12.078-31.743-12.078-43.815,0c-0.987,0.985-0.987,2.583,0,3.569   c0.493,0.494,1.14,0.741,1.786,0.741c0.646,0,1.292-0.247,1.786-0.741c10.107-10.107,26.562-10.104,36.673,0   c0.987,0.987,2.59,0.987,3.571,0C70.955,42.517,70.955,40.918,69.968,39.934z"/><path class="rim2" d="M48.059,40.479c-6.261,0-12.146,2.436-16.567,6.862c-0.987,0.987-0.987,2.585,0,3.569   c0.494,0.494,1.14,0.741,1.785,0.741c0.646,0,1.292-0.247,1.786-0.741c3.469-3.47,8.085-5.383,12.996-5.383   c4.911,0,9.527,1.913,12.999,5.383c0.987,0.988,2.583,0.988,3.571,0c0.986-0.987,0.986-2.582,0-3.569   C60.203,42.914,54.32,40.479,48.059,40.479z"/><path class="rim3" d="M48.059,50.504c-4.247,0-8.235,1.654-11.232,4.653c-0.985,0.986-0.985,2.586,0.002,3.573   c0.987,0.981,2.586,0.984,3.573-0.003c2.042-2.047,4.762-3.171,7.658-3.171s5.621,1.127,7.667,3.171   c0.493,0.494,1.14,0.741,1.786,0.741c0.646,0,1.293-0.247,1.785-0.741c0.986-0.987,0.986-2.586,0-3.57   C56.295,52.158,52.303,50.504,48.059,50.504z"/></g></svg>
+        </div>
+        <div style="display:flex; flex-flow: column; padding-top:10px; color:black; font-family:helvetica neue;"> Some challenges with quality control on historical meteorological data: 
+         <ul style="list-style-type:disc; margin-left: 30px;"> 
+            <li> historical v. current regional climates and microclimates</li>
+            <li> equipment used v. current equipment (shelters, gages, digitizers)</li>
+            <li> data quality and resolution (daily, five minute, instantaneous) </li>
+            <li> data storage and extraction (databases, field logs, files) </li>
+        </ul>
+        <p style="padding-top: 5%; text-align:center;"><strong>For example ...</strong></p></div>
+    </div>
+
+    <div id="slide3" class="step" data-x="-8300" data-y="500">
+        <div style="display:flex; flex-flow: row no wrap; justify-content: space-around;">
+            <p style="text-align:center; font-family: helvetica neue; padding-bottom: 5px;">On <strong>September 2, 1988, </strong> PRIMET station recorded 43 C at 15:00. <strong> Is this an acceptable temperature reading?</strong></p>
+        </div>
+        <div class="data-here" style="display:flex; flex-flow: row no wrap; justify-content: space-around">
+        </div>
+        <div style="display:flex; flex-flow: row no wrap; justify-content: space-around; padding-top: 5%">
+        <div class="button" style="display: flex; flex-flow: row; justify-content: space-around; color:black; width: 25%;height: 10%;border: 1px solid black; padding-top: 2%; padding-bottom: 2%; text-align: center; font-family: helvetica neue; font-size: 70%; border-radius: 10%; background-color: #F06D06;"> Toggle Year
+        </div></div>
+        <script>
+        var width = 800;
+        var height = 400;
+
+            data=[{
+            "hour": 0,
+            "temp": 14.0,
+            "t1": 9.1,
+            }, {
+            "hour": 1,
+            "temp": 13.1,
+            "t1": 8.5,
+            }, {
+            "hour": 2,
+            "temp": 12.2,
+            "t1": 7.9,
+            }, {
+            "hour": 3,
+            "temp": 11.4,
+            "t1": 7.4,
+            }, {
+            "hour": 4,
+            "temp": 10.8,
+            "t1": 7.3,
+            }, {
+            "hour": 5,
+            "temp": 10.3,
+            "t1": 7.8,
+            }, {
+            "hour": 6,
+            "temp": 9.9,
+            "t1": 8.1,
+            }, {
+            "hour": 7,
+            "temp": 10.3,
+            "t1":8.7,
+            }, {
+            "hour": 8,
+            "temp": 11.6,
+            "t1": 9.6,
+            }, {
+            "hour": 9,
+            "temp": 16.5,
+            "t1": 10.7,
+            }, {
+            "hour": 10,
+            "temp": 23.9,
+            "t1": 12.4,
+            }, {
+            "hour": 11,
+            "temp": 29.9,
+             "t1": 13.0,
+            }, {
+            "hour": 12,
+            "temp": 35.2,
+            "t1": 14.4,
+            }, {
+            "hour": 13,
+            "temp": 39.3,
+            "t1": 14.3,
+            }, {
+            "hour": 14,
+            "temp": 41.6,
+            "t1": 13.9,
+            }, {
+            "hour": 15,
+            "temp": 43.0,
+            "t1": 13.2,
+            }, {
+            "hour": 16,
+            "temp": 42.1,
+            "t1": 13.2,
+            }, {
+            "hour": 17,
+            "temp": 37.3,
+            "t1": 12.4,
+            }, {
+            "hour": 18,
+            "temp": 29.8,
+            "t1": 12.2,
+            }, {
+            "hour": 19,
+            "temp": 24.3,
+            "t1": 11.5,
+            }, {
+            "hour": 20,
+            "temp": 21.0,
+            "t1": 10.7,
+            },{
+            "hour": 21,
+            "temp": 19.1,
+            "t1": 10.5,
+            }, {
+            "hour": 22,
+            "temp": 17.3,
+            "t1": 10.1,
+            }, {
+            "hour": 23,
+            "temp": 15.7,
+            "t1": 10.2,
+            }];
+
+            var tip = d3.tip()
+              .attr('class', 'd3-tip')
+              .offset([-10, 0])
+              .html(function(d) {
+                return "<strong>Temp:</strong> <span style='color:red'>" + d.temp + "</span></br><strong> Hour: </strong><span style='color:red'>" + d.hour +"</span>";
+              })
+
+            var tip2 = d3.tip()
+              .attr('class', 'd3-tip')
+              .offset([-10, 0])
+              .html(function(d) {
+                return "<strong>Temp:</strong> <span style='color:red'>" + d.t1 + "</span></br><strong> Hour: </strong><span style='color:red'>" + d.hour +"</span>";
+            })
+
+            var x = d3.scale.linear()
+            .range([0, width])
+            .domain([-0.5, 25.5]);
+
+
+            var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
+
+            var svg = d3.select(".data-here").append("svg") 
+            .attr("width", width)                            
+            .attr("height", height)
+            .style("border","2px solid black");
+
+            svg.call(tip);
+
+            var circles = svg.selectAll("circle")
+            .data(data)
+            .enter()
+            .append("circle");
+
+            // to add a second class, select the first class and layer on it
+            var circles2 = svg.selectAll(".first-set")
+            .data(data)
+            .enter()
+            .append("circle");
+
+            var descCircle = circles
+            .attr("class", "first-set")
+            .attr("cx", function (d) { return x(d.hour); })
+            .attr("cy", function (d) { return height-d.temp*5; })
+            .attr("r", function (d) { return d.temp; })
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide)
+            .style("stroke-width","2")
+            .style("stroke","gray")
+            .style("fill", function(d) { 
+              var colorReturn;
+              if (d.temp < 10.0){
+                colorReturn="yellow";
+              } else if (d.temp>10.0 && d.temp<15.0){
+                colorReturn="#F7A516";
+              } else if (d.temp>=15.0 && d.temp<20.0){
+                colorReturn="#FFB249";
+              } else if (d.temp>=20.0 && d.temp<25.0){
+                colorReturn="#FF8A21"
+              } else if (d.temp>=25.0 && d.temp<40.0){
+                colorReturn="#C64E00";
+              } else if (d.temp>=40.0){
+                colorReturn="#BC4400";}
+              return colorReturn; 
+            });
+
+            var descCircle2 = circles2.attr("cx", function (d) { return x(d.hour); })
+            .attr("class","second-set")
+            .attr("cy", function (d) { return height-d.temp*5; })
+            .attr("r", function (d) { return d.t1; })
+            .on('mouseover', tip2.show)
+            .on('mouseout', tip2.hide)
+            .style("stroke-width","2")
+            .style("stroke","gray")
+            .style("fill", function(d) { 
+              var colorReturn;
+              if (d.t1 < 8.0){
+                colorReturn="#00BFFF";
+              } else if (d.t1>=8.0 && d.t1<12.0){
+                colorReturn="#00CED1";
+              } else if (d.t1>=12.00){
+                colorReturn="#00FA9A";}
+              return colorReturn; 
+            })
+            .style("opacity", 0);
+
+            svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height-200 + ")")
+            .call(xAxis);
+
+
+            $(".button").click(function(){
+              if ($(".first-set").css("opacity")==0){
+                $(".first-set").animate({opacity:1},1000);
+                $(".second-set").animate({opacity:0},1000);
+                svg.call(tip);}
+              else if ($(".first-set").css("opacity")==1){
+                $(".second-set").animate({opacity:1}, 1000);
+                $(".first-set").animate({opacity:0}, 1000);
+              svg.call(tip2);}
+            });</script>
+        <p style="text-align: center; padding-top: 5%;">How should we compare it to other stations, current data, or its own historical data?</p>
+        </div>
+    
+
+    <div id="slide4" class="step" data-x="-4000" data-y="-1500">
+        <p style="text-align: center;"> Which meteorlogical stations and methods are <strong>normal</strong>? And why?</p>
+        <div id="some-div"></div>
+        <script>
+        var width = 800;
+      var height = 600;
+
+      var data = [{
+        "age": 2015 - 1972,
+        "pc": "AIRPRI05",
+        "site": "PRIMET",
+        "type": "cotton",
+        "height": height - 150,
+        "mins": 60,
+        "num": 537884,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 1994,
+        "pc": "AIRPRI01",
+        "site": "PRIMET",
+        "type": "pvc",
+        "height": height - 450,
+        "mins": 15,
+        "num": 775847-346689,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "PRIMET",
+        "type": "gill",
+        "height": height - 450,
+        "mins": 15,
+        "num": 346689,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 1994,
+        "pc": "AIRPRI02",
+        "site": "PRIMET",
+        "type": "pvc",
+        "height": height - 350,
+        "mins": 15,
+        "num": 775847-346689,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "PRIMET",
+        "type": "gill",
+        "height": height - 350,
+        "mins": 15,
+        "num": 346689,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 1994,
+        "pc": "AIRPRI03",
+        "site": "PRIMET",
+        "type": "pvc",
+        "height": height - 250,
+        "mins": 15,
+        "num": 775847-346689,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "PRIMET",
+        "type": "gill",
+        "height": height - 250,
+        "mins": 15,
+        "num": 346689,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1994,
+        "start": 1994,
+        "pc": "AIRPRI04",
+        "site": "PRIMET",
+        "type": "pvc",
+        "height": height - 150,
+        "mins": 15,
+        "num": 775847-346689,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "PRIMET",
+        "type": "gill",
+        "height": height - 150,
+        "mins": 15,
+        "num": 346689,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 2013,
+        "start": 2013,
+        "pc": "AIRPRI08",
+        "site": "PRIMET",
+        "type": "asp",
+        "height": height - 350,
+        "mins": 15,
+        "num": 199558,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2013,
+        "pc": "AIRPRI09",
+        "site": "PRIMET",
+        "type": "asp",
+        "height": height - 450,
+        "mins": 15,
+        "num": 199558,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2013,
+        "pc": "AIRPRI07",
+        "site": "PRIMET",
+        "type": "asp",
+        "height": height - 250,
+        "mins": 15,
+        "num": 199558,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2004,
+        "pc": "AIRPRI06",
+        "site": "PRIMET",
+        "type": "asp",
+        "height": height - 150,
+        "mins": 15,
+        "num": 508183,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 1990,
+        "pc": "AIRVAN01",
+        "site": "VANMET",
+        "type": "pvc",
+        "height": height - 450,
+        "mins": 60,
+        "num": 815119-346702,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "VANMET",
+        "type": "gill",
+        "height": height - 450,
+        "mins": 15,
+        "num": 346702,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1994,
+        "pc": "AIRVAN02",
+        "site": "VANMET",
+        "type": "pvc",
+        "height": height - 350,
+        "mins": 15,
+        "num": 782588 -346702,
+        "cumulative": 0,
+      },  {
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "VANMET",
+        "type": "gill",
+        "height": height - 350,
+        "mins": 15,
+        "num": 346702,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 1994,
+        "pc": "AIRVAN03",
+        "site": "VANMET",
+        "type": "pvc",
+        "height": height - 250,
+        "mins": 15,
+        "num": 782588-346702,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "VANMET",
+        "type": "gill",
+        "height": height - 250,
+        "mins": 15,
+        "num": 346702,
+        "cumulative": 0,
+      },  {
+        "age": 2015 - 1993,
+        "pc": "AIRVAN04",
+        "site": "VANMET",
+        "type": "pvc",
+        "height": height - 150,
+        "mins": 15,
+        "num": 788510-346702,
+        "cumulative": 0,
+      },  {
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "VANMET",
+        "type": "gill",
+        "height": height - 150,
+        "mins": 15,
+        "num": 346702,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 1990,
+        "pc": "AIRVAN05",
+        "site": "VANMET",
+        "type": "pvc",
+        "height": height - 50,
+        "mins": 60,
+        "num": 75335,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 2013,
+        "pc": "AIRVAN08",
+        "site": "VANMET",
+        "type": "gill",
+        "height": height - 350,
+        "mins": 15,
+        "num": 114827,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1998,
+        "pc": "AIRCS202",
+        "site": "CS2MET",
+        "type": "pvc",
+        "height": height - 150,
+        "mins": 15,
+        "num": 591343,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1994,
+        "pc": "AIRUPL01",
+        "site": "UPLMET",
+        "type": "pvc",
+        "height": height - 450,
+        "mins": 15,
+        "num": 375723,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "UPLMET",
+        "type": "gill",
+        "height": height - 450,
+        "mins": 15,
+        "num": 716421 -  375723 ,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1994,
+        "pc": "AIRUPL02",
+        "site": "UPLMET",
+        "type": "pvc",
+        "height": height - 350,
+        "mins": 15,
+        "num": 375723,
+        "cumulative":0,
+      },{
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "UPLMET",
+        "type": "gill",
+        "height": height - 350,
+        "mins": 15,
+        "num": 716421 -  375723,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1994,
+        "pc": "AIRUPL03",
+        "site": "UPLMET",
+        "type": "pvc",
+        "height": height - 250,
+        "mins": 15,
+        "num": 375723,
+        "cumulative":0,
+      },{
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "UPLMET",
+        "type": "gill",
+        "height": height - 250,
+        "mins": 15,
+        "num": 716421 - 376723,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1994,
+        "pc": "AIRUPL04",
+        "site": "UPLMET",
+        "type": "pvc",
+        "height": height - 150,
+        "mins": 15,
+        "num": 375723,
+        "cumulative":0,
+      },{
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "UPLMET",
+        "type": "gill",
+        "height": height - 150,
+        "mins": 15,
+        "num": 716421,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 2009,
+        "pc": "AIRUPL08",
+        "site": "UPLMET",
+        "type": "gill",
+        "height": height - 350,
+        "mins": 15,
+        "num": 191940,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1990,
+        "pc": "AIRH1501",
+        "site": "H15MET",
+        "type": "pvc",
+        "height": height - 250,
+        "mins": 15,
+        "num": 250411,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1992,
+        "pc": "",
+        "site": "H15MET",
+        "type": "gill",
+        "height": height - 250,
+        "mins": 15,
+        "num": 15050,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1994,
+        "pc": "AIRH1502",
+        "site": "H15MET",
+        "type": "pvc",
+        "height": height - 150,
+        "mins": 15,
+        "num": 250399,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 1995,
+        "pc": "AIRCEN01",
+        "site": "CENMET",
+        "type": "pvc",
+        "height": height - 450,
+        "mins": 15,
+        "num": 724736-347856,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "CENMET",
+        "type": "gill",
+        "height": height - 450,
+        "mins": 15,
+        "num": 347856,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 1995,
+        "pc": "AIRCEN02",
+        "site": "CENMET",
+        "type": "pvc",
+        "height": height - 350,
+        "mins": 15,
+        "num": 724736-347856,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "CENMET",
+        "type": "gill",
+        "height": height - 350,
+        "mins": 15,
+        "num": 347856,
+        "cumulative": 0,
+      },  {
+        "age": 2015 - 1995,
+        "pc": "AIRCEN03",
+        "site": "CENMET",
+        "type": "pvc",
+        "height": height - 250,
+        "mins": 15,
+        "num": 724736-347856,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "CENMET",
+        "type": "gill",
+        "height": height - 250,
+        "mins": 15,
+        "num": 347856,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 1995,
+        "pc": "AIRCEN04",
+        "site": "CENMET",
+        "type": "pvc",
+        "height": height - 150,
+        "mins": 15,
+        "num": 724736-347856,
+        "cumulative": 0,
+      },{
+        "age": 2015 - 2004,
+        "pc": "",
+        "site": "CENMET",
+        "type": "gill",
+        "height": height - 150,
+        "mins": 15,
+        "num": 347856,
+        "cumulative": 0,
+      }, {
+        "age": 2015 - 2014,
+        "pc": "AIRCEN08",
+        "site": "CENMET",
+        "type": "asp",
+        "height": height - 350,
+        "mins": 5,
+        "num": 29467,
+        "cumulative": 0,
+      }];
+
+      // a function to get the cumulative sum of the num column
+      var addObservations = function(x) {
+        var addDatas;
+        for (i = 0; i < x.length; i++) {
+          if (i == 0) {
+            // the cumulative sum of data at point 0 is jist itself
+            x[i].cumulative = x[i].num;
+            addDatas = 0;
+          } else if (i >= 0) {
+            addDatas += x[i].num;
+            // the cumulative sum from then on is self + prior
+            x[i].cumulative = addDatas;
+          };
+        };
+        return addDatas;
+      };
+
+      // total number of datas
+      var cumResults;
+      cumResults = addObservations(data);
+
+      // the 0th point has a height of itself/cumulativeResults - everything else needs this as an offset
+      var shortestHeight;
+      shortestHeight = height * data[0].num / cumResults;
+
+     var tip = d3.tip()
+      .attr('class', 'd3-tip')
+      .offset([10, 100])
+      .html(function(d) {
+        return "<strong>Site:</strong> <span style='color:red'>" + d.site + " : " + Math.round(100*d.num /cumResults) +" %  : " + d.type + " </span>";
+      }) 
+      
+      // append the svg to the chart
+      var svg = d3.select("#some-div").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+      
+      svg.call(tip);
+
+      // create some rectangles for the percents
+      var rectangles = svg.selectAll("rect")
+        .data(data)
+        .enter()
+        .append("rect");
+
+      // the negative 2 is to offset for the "stroke" which makes it slightly taller than the page
+      var rectangleAttributes = rectangles
+        .attr("x", function(d) {
+          return 0;
+        })
+        .attr("height", function(d) {
+          return -2 + height * (d.num / cumResults);
+        })
+        .attr("class","bar")
+        .attr("y", function(d, i) {
+          var returnY;
+          if (i === 0) {
+            returnY = height * (d.cumulative / cumResults) - height * (d.num / cumResults);
+          } else if (i === 1) {
+            returnY = -10+ height * (d.cumulative / cumResults) - height * (d.num / cumResults) + shortestHeight;
+          } else if (i > 1) {
+            returnY = -20 + height * (d.cumulative / cumResults) - height * (d.num / cumResults) + shortestHeight;
+          }
+          return returnY;
+        })
+        .attr("width", function(d) {
+          return 40;
+        })
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide)
+        .style("stroke-width", "0.5")
+        .style("stroke", "black")
+        .style("fill", function(d) {
+          var returnColor;
+          if (d.type == "cotton") {
+            returnColor = "orange";
+          } else if (d.type == "pvc") {
+            returnColor = "cyan";
+          } else if (d.type == "asp") {
+            returnColor = "yellow";
+          } else if (d.type == "gill") {
+            returnColor = "red";
+          }
+          return returnColor;
+        });
+
+      var circles = svg.selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle");
+
+      var descCircles = circles
+        .attr("cx", function(d) {
+          var bySite;
+          if (d.site == "PRIMET") {
+            bySite = 50;
+          } else if (d.site == "VANMET") {
+            bySite = 150;
+          } else if (d.site == "CS2MET") {
+            bySite = 250;
+          } else if (d.site == "H15MET") {
+            bySite = 350;
+          } else if (d.site == "UPLMET") {
+            bySite = 450;
+          } else if (d.site == "CENMET") {
+            bySite = 550;
+          } else if (d.site == "PHRSC") {
+            bySite = 650;
+          }
+          return 150 + bySite -d.age;
+        })
+        .attr("cy", function(d) {
+          var returnHeightOffset;
+          if (d.type == "cotton") {
+            returnHeightOffset = 10;
+          } else if (d.type == "pvc") {
+            returnHeightOffset = 10;
+          } else if (d.type == "gill") {
+            returnHeightOffset = 10;
+          } else if (d.type == "asp") {
+            returnHeightOffset = 30;
+          }
+          return d.height + returnHeightOffset;
+        })
+        .attr("r", function(d) {
+          return d.age;
+        })
+        .style("stroke", function(d){
+          if (d.type=="asp"){
+            return "yellow";}
+          else {
+           return "transparent"; 
+          }
+        })
+        .style("stroke-width", function(d){
+          if (d.type=="asp"){
+            return "2";}
+          else {
+           return "0"; 
+          }
+        })
+        .style("fill", function(d) {
+          var returnColor;
+          if (d.type == "cotton") {
+            returnColor = "orange";
+          } else if (d.type == "pvc") {
+            returnColor = "cyan";
+          } else if (d.type == "asp") {
+            returnColor = "yellow";
+          } else if (d.type == "gill") {
+            returnColor = "red";
+          }
+          return returnColor;
+        });
+
+      var descText = svg.selectAll("text")
+        .data(data)
+        .enter()
+        .append("text")
+        .text(function(d) {
+          return d.pc;
+        })
+        .attr("x", function(d) {
+          var bySite;
+          if (d.site == "PRIMET") {
+            bySite = 50;
+          } else if (d.site == "VANMET") {
+            bySite = 150;
+          } else if (d.site == "CS2MET") {
+            bySite = 250;
+          } else if (d.site == "H15MET") {
+            bySite = 350;
+          } else if (d.site == "UPLMET") {
+            bySite = 450;
+          } else if (d.site == "CENMET") {
+            bySite = 550;
+          } else if (d.site == "PHRSC") {
+            bySite = 650;
+          }
+          return 150 + bySite - d.age * 3;
+        })
+        .attr("y", function(d) {
+          var returnHeightOffset;
+          if (d.type == "cotton") {
+            returnHeightOffset = 10;
+          } else if (d.type == "pvc") {
+            returnHeightOffset = 20;
+          } else if (d.type == "gill") {
+            returnHeightOffset = 30;
+          } else if (d.type == "asp") {
+            returnHeightOffset = 40;
+          }
+          return d.height + returnHeightOffset;
+        })
+        .style("font-size","10px");</script>
+         <p style="display: none; font-size: 50%; text-align: center;" id="slide4-willappear"> The mean temperature for September 2nd's and 15:00 hours from <b>1691 other annually synchronous measurements</b> is 23.4 C. Not the 43 from 1988, but not the 13.2 from 2004 either!</p>
+         <script>
+        $(document).click(function(){
+                $("#slide4-willappear").fadeToggle("fast");
+        });
+        </script>
+    </div>
+
+    <div id="slide5" class="step" data-x="-3000" data-y="-1500">
+        <div style="display:flex; background-color: transparent; flex-flow: row wrap; justify-content: space-around;">
+        <p>No QC flags were triggered on September 2, 1988. But <span style="color:red;"><strong> 43 C is hot.</strong></span> But is it an <b>anomaly</b> due to the <b>data quality</b>? Or the <b>data itself</b>? How do we know what is <b>normal</b> when we have 45 different air temperature methods?</p>
+        <div style="display:flex; background-color: transparent; flex-flow: row wrap; justify-content: flex start; opacity:1;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="160px" height="160px" viewBox="0 -5 50 50"><path class="hot" fill="#F06D06" stroke="black" d="M20,17.109V4c0-2.207-1.791-4-4-4s-4,1.793-4,4v13.109C10,18.496,8,21.047,8,24c0,4.418,3.582,8,8,8s8-3.582,8-8  C24,21.047,22,18.496,20,17.109z"/> <path class="part2" fill="white" d="M18,6h-2v2h2v4h-2v2h2v4h-4V4c0-1.105,0.895-2,2-2s2,0.895,2,2V6z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="160px" height="160px" viewBox="0 -5 50 50"><path class="hot" fill="red" stroke="black" d="M20,17.109V4c0-2.207-1.791-4-4-4s-4,1.793-4,4v13.109C10,18.496,8,21.047,8,24c0,4.418,3.582,8,8,8s8-3.582,8-8  C24,21.047,22,18.496,20,17.109z"/> <path class="part2" fill="white" stroke="#880000" stroke-width:"1px" d="M18,6h-2v2h2v4h-2v2h2v4h-4V4c0-1.105,0.895-2,2-2s2,0.895,2,2V6z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" width="160px" height="190px"><style type="text/css">
+                <![CDATA[
+                @keyframes colors{10%{fill: #00CC33; opacity: 0.5;}20%{fill: #00CC33; opacity: 1;}30%{fill:red; opacity: 0.5;}40%{fill:red; opacity: 1;}50%{fill:#F06D06; opacity: 0.5;}60%{fill:#F06D06; opacity: 1;}70%{fill:#E77471; opacity: 0.5;}80%{fill:#E77471; opacity: 1;}90%{fill:cyan; opacity: 0.5;} 0,100%{fill:cyan; opacity: 1;}}
+                .ball{
+                    fill: cyan;
+                    stroke:blue;
+                    stroke-width:1px;
+                    animation: colors 5s ease-in-out infinite;
+                    }
+                ]]>
+            </style><path fill="#00CC33" d="M57.913,37.085c-0.516,0.244-1.086,0.366-1.655,0.366c-0.529,0-1.045-0.109-1.534-0.314  c-1.494-0.625-2.254-1.9-2.254-3.503v-2.796c0-1.615,0.748-2.906,2.268-3.516c0.488-0.19,1.004-0.299,1.521-0.299  s1.059,0.122,1.533,0.325c1.467,0.639,2.173,1.914,2.173,3.49v2.796C59.964,35.143,59.325,36.433,57.913,37.085z M57.397,30.771  c0-0.787-0.258-1.494-1.181-1.494c-0.882,0-1.181,0.734-1.181,1.494v2.933c0,0.773,0.299,1.494,1.181,1.494  c0.923,0,1.181-0.707,1.181-1.494V30.771z"></path><path fill="#F06D06" d="M50.447,20.025c-0.56,0.108-1.142,0.086-1.695-0.055c-0.513-0.131-0.986-0.365-1.409-0.683  c-1.293-0.976-1.712-2.4-1.316-3.952l0.694-2.709c0.4-1.566,1.443-2.63,3.068-2.845c0.52-0.063,1.046-0.04,1.547,0.087  c0.501,0.128,0.996,0.382,1.406,0.696c1.262,0.982,1.63,2.393,1.239,3.919l-0.692,2.709C52.916,18.652,51.977,19.744,50.447,20.025z   M51.513,13.78c0.195-0.761,0.12-1.51-0.773-1.738c-0.855-0.22-1.326,0.417-1.515,1.153l-0.728,2.841  c-0.192,0.75-0.081,1.521,0.774,1.74c0.895,0.229,1.32-0.391,1.515-1.154L51.513,13.78z"></path><path fill="red" d="M35.506,10.409l-0.528-7.871l-1.639,0.11l-0.144-2.154l4.201-0.281l0.67,10.024L35.506,10.409z"></path><path fill="cyan" d="M42.725,36.834l-0.527-7.87l-1.639,0.109l-0.144-2.154l4.2-0.282l0.671,10.025L42.725,36.834z"></path><path fill="#000000" d="M62.684,27.405l2.557-7.462l-1.555-0.532l0.699-2.042l3.982,1.364l-3.255,9.505L62.684,27.405z"></path><path fill="#000000" d="M29.598,29.723l-0.528-7.87l-1.639,0.109l-0.144-2.154l4.2-0.282l0.671,10.025L29.598,29.723z"></path><path fill="yellow" d="M58.774,13.762l1.151-7.804l-1.624-0.24l0.313-2.136l4.165,0.614l-1.469,9.94L58.774,13.762z"></path><circle fill="#000000" class="ball" cx="50.005" cy="93.938" r="5.85"></circle><path fill="000000" d="M50.005,21.301c-17.806,0-32.287,2.84-32.763,6.377c-0.02-0.006-0.042-0.014-0.062-0.02l0.057,0.063  c-0.004,0.045-0.017,0.09-0.017,0.136c0,0.851,0.818,1.663,2.291,2.408l25.106,28.083v26.075c0,0.349,0.281,0.629,0.628,0.629  c7.046,0,9.815-3.373,9.931-3.517c0.089-0.111,0.137-0.25,0.137-0.392V58.349l25.04-28.009c1.567-0.766,2.438-1.604,2.438-2.482  C82.79,24.236,68.111,21.301,50.005,21.301z M70.166,29.208c-5.64,0.925-12.801,1.434-20.161,1.434  c-7.361,0-14.522-0.508-20.161-1.434c-2.749-0.451-4.722-0.926-6.124-1.352c1.402-0.424,3.375-0.9,6.124-1.351  c5.639-0.924,12.8-1.434,20.161-1.434c7.36,0,14.521,0.509,20.161,1.434c2.75,0.451,4.723,0.926,6.123,1.351  C74.889,28.282,72.916,28.758,70.166,29.208z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="160px" height="160px" viewBox="0 -5 50 50"><path class="hot" fill="yellow" stroke="black" d="M20,17.109V4c0-2.207-1.791-4-4-4s-4,1.793-4,4v13.109C10,18.496,8,21.047,8,24c0,4.418,3.582,8,8,8s8-3.582,8-8  C24,21.047,22,18.496,20,17.109z"/> <path class="part2" fill="white" d="M18,6h-2v2h2v4h-2v2h2v4h-4V4c0-1.105,0.895-2,2-2s2,0.895,2,2V6z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="160px" height="160px" viewBox="0 -5 50 50"><path class="hot" fill="#00CC33" stroke="black" d="M20,17.109V4c0-2.207-1.791-4-4-4s-4,1.793-4,4v13.109C10,18.496,8,21.047,8,24c0,4.418,3.582,8,8,8s8-3.582,8-8  C24,21.047,22,18.496,20,17.109z"/> <path class="part2" fill="white" d="M18,6h-2v2h2v4h-2v2h2v4h-4V4c0-1.105,0.895-2,2-2s2,0.895,2,2V6z"/></svg>
+        </div>
+        <p>For example, 14 years later (May, 2002), on that same site, at that same height, another temperature sensor read <span style="color:red;">42.9 C</span> and triggered QC flags. Was this due to <strong>time of year</strong>,<strong> method</strong>, or the <stromg>data</strong> itself?</p>
+        </div>
+    </div>
+
+    <div id="slide6" class="step" data-x="-2000" data-y="-1500">
+        <p style="text-align: center; padding-bottom: 10px;"> We're used to comparing observations across concurrent observations in <strong>space</strong>, but its difficult to juxtapose data across <strong>time</strong>. If only we had an <strong>experiment</strong> to help us with that ... </p>
+        <div class="phrscimg" style="display:flex; flex-flow: row wrap; justify-content: space-around; background-color: transparent;"><img src="phrsc.png" width="700px" height="400px"></img></div>
+        <p style="text-align:center; padding-top:10px;">Oh wait, we do...</p>
+    </div>
+<!-- 
+    <div id="title" class="step" data-x="-1000" data-y="-1500" data-scale="4">
+        <span class="try">... we have </span>
+        <h1>PHRSC<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> the PRIMET Historic Radiation Shield Comparison</span>
+    </div> -->
+
+    <!-- <div class="step" data-x="0" data-y="-1500">
+        
+    </div> -->
+
+    <!--
+        
+        This is an example of step element being scaled.
+        
+        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
+        element will be 4 times larger than the others.
+        From presentation and transitions point of view it means, that it will have to be scaled
+        down (4 times) to make it back to its correct size.
+        
+    -->
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">... we have </span>
+        <h1>PHRSC<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> the PRIMET Historic Radiation Shield Comparison</span>
+    </div>
+
+
+    <div id="slide7" class="step" data-x="350" data-y="3700" data-rotate="90" data-scale="5">
+        <p style="font-size:120%; padding-bottom: 10px;"> The <strong>PRIMET HISTORIC RADIATION SHIELD COMPARISON SITE</strong> contains </p>
+        <ul style="list-style-type:disc; margin-left: 10px;"> 
+            <li class="flash" style="padding-bottom:5px;"> Air temperature probes (CS107) and integrated temperature-relative humidity probes (HMP45C) </li>
+            <li class="flash" style="padding-bottom:5px;"> Net radiometer (measures long-wave and short-wave radiation, incoming and outgoing).</li>
+            <li class="flash" style="padding-bottom:5px;"> Propellor anemometer (winds < 1 m/s questionable) </li>
+        </ul>
+    </div>
+
+
+    <div id="slide8" class="step" data-x="-2850" data-y="3700" data-rotate="90" data-scale="5">
+        <p> Specifically, at PHRSC we set up <strong> replicas of the protective shields </strong> that we installed around H.J. Andrews "met" sites since the 1950's. At that time, we only collected daily data.</p>
+        <p style="text-align:center; padding-top: 5px;"><strong>Now, we collect air temperature data from all our shield types concurrently at <strong> one </strong> site and at 5 minute resolution</strong></p>
+        <div style="padding-top: 5%; padding-bottom: 5%; display:flex; flex-flow: row wrap; justify-content: space-around;"><img src="remy.png" width="250px" height="250px"></img><img src="gill.png" width="250px" height="250px"></img></div>
+    </div>
+    
+
+    <!--
+        
+        This step here doesn't introduce anything new when it comes to data attributes, but you
+        should notice in the demo that some words of this text are being animated.
+        It's a very basic CSS transition that is applied to the elements when this step element is
+        reached.
+        
+        At the very beginning of the presentation all step elements are given the class of `future`.
+        It means that they haven't been visited yet.
+        
+        When the presentation moves to given step `future` is changed to `present` class name.
+        That's how animation on this step works - text moves when the step has `present` class.
+        
+        Finally when the step is left the `present` class is removed from the element and `past`
+        class is added.
+        
+        So basically every step element has one of three classes: `future`, `present` and `past`.
+        Only one current step has the `present` class.
+        
+    -->
+
+    <div id="slide9" class="step" data-x="4500" data-y="-850" data-rotate="270" data-scale="6">
+        <div style="display:flex; flex-flow: row no wrap; justify-content: space around;">
+            <p id="first" style="padding-left: 5%; margin-top:2%; line-height:1.2;">To be honest, <b class="scaling" style="color:#F06D06; ">   radiation</b> shield is sort of a misleading name.
+            </p>
+        </div>
+        <div id="fadein" style="display:none;">
+            <p style="text-align:center;"> Direct radiation is only part of the problem; once addressed, we have to deal with temperature effects from <strong><span style="color:#F06D06;">convection</span></strong> and <strong> <span style="color:#00CC33;">reflection</span></strong>
+            </p>
+            <script>
+            $(document).click(function(){
+                $('#fadein').fadeToggle("slow");
+                $('#first').fadeToggle("fast");
+            });
+            </script>
+            <div style="display:flex; flex-flow: row no wrap; justify-content: space-around; padding-top: 5%;">
+            <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" height="250" width="250" id="svg-sun" viewBox="0 0 100 100" version="1.1"><style type="text/css">
+                <![CDATA[
+                @keyframes glowww{0%{opacity: 0.1;} 100%{opacity: 1;}}
+                #sun1{
+                    fill:yellow;
+                    stroke:yellow;
+                    animation: glowww 3s ease-in;
+                    }
+                ]]>
+            </style>
+          <defs id="defs5099" /> >
+          <g transform="matrix(2.2779043,0,0,2.3584906,0,-1.8867925)" id="sun1">
+            <g id="sun2">
+              <g id="sun3">
+                <g id="sun4">
+                  <g id="sun5">
+                    <path style="fill:orange" id="path5051" d="m 18.2,32.8 -9.7,0 C 3.8,32.8 0,29 0,24.3 c 0,-4.9 4.3,-8.9 9.3,-8.4 1.8,-2.8 4.8,-4.6 8.1,-4.9 0.3,0 0.7,0 1,0 0.6,0 1.1,0.5 1.1,1.1 0,0.6 -0.5,1.1 -1.1,1.1 -0.3,0 -0.5,0 -0.8,0 -2.9,0.3 -5.4,1.9 -6.8,4.4 -0.2,0.4 -0.7,0.6 -1.2,0.5 -3.9,-0.8 -7.4,2.3 -7.4,6.1 0,3.4 2.8,6.3 6.3,6.3 l 9.7,0 c 0.6,0 1.1,0.5 1.1,1.1 0,0.6 -0.5,1.2 -1.1,1.2 z"
+                    />
+                  </g>
+                </g>
+              </g>
+              <g id="g5053">
+                <path style="fill:yellow" stroke="orange" stroke-width="1px" id="path5055" d="m 22.7,7.4 c -0.6,0 -1.1,-0.5 -1.1,-1.1 l 0,-4.4 c 0,-0.6 0.5,-1.1 1.1,-1.1 0.6,0 1.1,0.5 1.1,1.1 l 0,4.4 c 0,0.6 -0.5,1.1 -1.1,1.1 z" />
+              </g>
+              <g id="g5057">
+                <path style="fill:yellow" stroke="orange" stroke-width="1px" id="path5059" d="m 22.7,43.2 c -0.6,0 -1.1,-0.5 -1.1,-1.1 l 0,-4.4 c 0,-0.6 0.5,-1.1 1.1,-1.1 0.6,0 1.1,0.5 1.1,1.1 l 0,4.4 c 0,0.6 -0.5,1.1 -1.1,1.1 z" />
+              </g>
+              <g id="g5061">
+                <path style="fill:black" id="path5063" d="m 20.4,28.7 c -0.3,0 -0.6,-0.1 -0.8,-0.3 -0.2,-0.2 -0.3,-0.5 -0.3,-0.8 0,-0.3 0.1,-0.6 0.3,-0.8 0.4,-0.4 1.2,-0.4 1.6,0 0.2,0.2 0.3,0.5 0.3,0.8 0,0.3 -0.1,0.6 -0.3,0.8 -0.2,0.2 -0.5,0.3 -0.8,0.3 z" />
+              </g>
+              <g id="g5065">
+                <path style="fill:yellow" stroke="orange" stroke-width="1px" id="path5067" d="m 42.8,23.1 -4.4,0 c -0.6,0 -1.1,-0.5 -1.1,-1.1 0,-0.6 0.5,-1.1 1.1,-1.1 l 4.4,0 c 0.6,0 1.1,0.5 1.1,1.1 0,0.6 -0.4,1.1 -1.1,1.1 z" />
+              </g>
+              <g id="g5069">
+                <path style="fill:yellow" stroke="orange" stroke-width="1px" id="path5071" d="M 11.2,22" />
+              </g>
+              <g id="g5073">
+                <path style="fill:yellow" stroke="orange" stroke-width="1px"id="path5075" d="M 14.8,22" />
+              </g>
+              <g id="g5077">
+                <path style="fill:yellow" stroke="orange" stroke-width="1px" id="path5079" d="M 33.8,12 C 33.5,12 33.2,11.9 33,11.7 32.6,11.3 32.6,10.6 33,10.1 L 36.2,7 c 0.4,-0.4 1.1,-0.4 1.6,0 0.5,0.4 0.4,1.1 0,1.6 l -3.1,3.1 C 34.4,11.9 34.1,12 33.8,12 Z" />
+              </g>
+              <g id="g5081">
+                <path style="fill:yellow" stroke="orange" stroke-width="1px" id="path5083" d="m 36.9,37.3 c -0.3,0 -0.6,-0.1 -0.8,-0.3 L 33,33.9 c -0.4,-0.4 -0.4,-1.1 0,-1.6 0.4,-0.5 1.1,-0.4 1.6,0 l 3.1,3.1 c 0.4,0.4 0.4,1.1 0,1.6 -0.2,0.2 -0.5,0.3 -0.8,0.3 z" />
+              </g>
+              <g id="g5085">
+                <path style="fill:#000000" id="path5087" d="m 22.7,32.8 c -0.6,0 -1.1,-0.5 -1.1,-1.1 0,-0.6 0.5,-1.1 1.1,-1.1 4.7,0 8.6,-3.8 8.6,-8.6 0,-4.8 -3.8,-8.6 -8.6,-8.6 -0.6,0 -1.1,-0.5 -1.1,-1.1 0,-0.6 0.5,-1.1 1.1,-1.1 5.9,0 10.8,4.8 10.8,10.8 0,6 -4.8,10.8 -10.8,10.8 z"
+                />
+              </g>
+              <g id="q1">
+                <path style="fill:black" id="path5091" d="m 20.4,25.7 c -0.6,0 -1.1,-0.5 -1.1,-1 0,-0.2 -0.1,-1.8 0.9,-2.8 0.2,-0.2 0.4,-0.4 0.7,-0.6 0.9,-0.7 1.7,-1.3 1.7,-2.2 0,-0.9 -0.7,-1.6 -1.6,-1.6 -0.9,0 -1.6,0.7 -1.6,1.6 0,0.6 -0.5,1.1 -1.1,1.1 -0.6,0 -1.1,-0.5 -1.1,-1.1 0,-2.1 1.7,-3.8 3.8,-3.8 2.1,0 3.8,1.7 3.8,3.8 0,2 -1.6,3.2 -2.5,4 -0.2,0.2 -0.4,0.3 -0.5,0.4 -0.2,0.2 -0.3,0.8 -0.3,1.1 0,0.6 -0.4,1.1 -1.1,1.1 0.1,0 0,0 0,0 z"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+        </div>
+        <p style="font-size:50%">In other words, radiation shields have to <span style="color:#F06D06">allow air circulation</span> while protecting the sensor from both <span style="color: #00CC33;">light (generating heat) from all angles</span></p>
+    </div>
+    </div>
+
+
+    <div id="slide10" class="step" data-x="1500" data-y="-5500" data-rotate="270" data-scale="6">
+        <div style ="display:flex; justify-content: space-around; flex-flow: row wrap; font-size:40px;"><p>Enclosing the sensor in <span style="text-shadow: 2px 2px 2px yellow;">reflective housing</span> limits air circulation.</p></div>
+        <div style ="display:flex; justify-content: space-around; flex-flow: row wrap; font-size:40px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100px" height="100px" viewBox="0 0 100 100"><style type="text/css">
+                <![CDATA[
+                @keyframes shine{0%, 100%{stroke-width: 1px; stroke:blue;} 50%{stroke-width:5px; stroke:yellow; opacity:1;}}
+                .metstation{
+                    animation: shine 3s ease-in-out infinite;
+                    }
+                ]]>
+            </style><g class="metstation" fill="white" stroke="blue" stroke-width="1px"><path d="M90.32,26.84c0,9.73-6.396,17.966-15.217,20.731L56.027,28.493L35.957,48.562l0,0H21.396v-0.007  c-0.05,0.001-0.099,0.007-0.149,0.007c-6.388,0-11.567-5.178-11.567-11.566s5.179-11.567,11.567-11.567  c0.05,0,0.099,0.007,0.149,0.007v-0.108h3.568c-0.092-0.64-0.156-1.288-0.156-1.953c0-7.495,6.076-13.57,13.57-13.57  c4.779,0,8.973,2.476,11.39,6.21c3.75-6.512,10.776-10.898,18.831-10.898C80.596,5.117,90.32,14.842,90.32,26.84z M35.957,57.014  v12.625V82.26v12.623h3.841V82.26h32.456v12.623h3.842V82.26V69.639V57.014L56.027,36.945L35.957,57.014z"/></g></svg></div>
+        <div style ="display:inline-block; padding-bottom:5%;">Couple that with <strong>high humidity</strong> and <strong>weak sub-canopy wind</strong>, and we've got prime conditions for <span style="color:#F06D06">convection</span> to affect the very sensor we're trying to protect. </div>
+        <div style="display:inline-block;"><p>The literature sets <strong>3 C</strong> as a quality threshold difference between an <strong>aspirated "truth" </strong> (a powered shield with forced air circulation) and <strong>"inferior"</strong> shields (which are better for deployment in remote locations) </p></div>
+    </div>
+
+    <div id="slide11" class="step" data-x="4500" data-y="-8000" data-rotate="270" data-scale="1">
+        <div class="some-div" style="display:flex; flex-flow: row wrap; justify-content: space-around">
+        <div id="show-value" style="display:flex;"></div>
+        <script>
+          var width = 600;
+          var height = 600;
+          var radius = Math.min(width, height) / 2;
+          var donutWidth = 75;
+          var totalSize = 0;
+          var thisValue;
+          //Number of values where difference from ASP > 3.0
+          var data = [{
+            'probe': 'Gill_AF',
+            'worse_3': 310,
+            'worse_5': 20,
+          }, {
+            'probe': 'Gill_Sh',
+            'worse_3': 304,
+            'worse_5': 16,
+          }, {
+            'probe': 'Gill_Lg',
+            'worse_3': 190,
+            'worse_5': 5,
+          }, {
+            'probe': 'Cotton',
+            'worse_3': 121,
+            'worse_5': 0,
+          }, {
+            'probe': 'HJA_Lg',
+            'worse_3': 620,
+            'worse_5': 76,
+          }, {
+            'probe': 'HJA_Sh',
+            'worse_3': 2813,
+            'worse_5': 131,
+          }]
+
+          var sumData = function(d) {
+            var tempsize = 0;
+            for (i = 0; i < d.length; i++) {
+              tempsize += d[i].worse_3;
+            }
+            return tempsize;
+          };
+
+          totalSize = sumData(data);
+
+          var mousey = function(d) {
+            var percentage3 = (100 * d.data.worse_3 / totalSize).toPrecision(3);
+            var percentage5 = (100 * d.data.worse_5 / totalSize).toPrecision(3);
+            return percentage3, percentage5
+          }
+
+          var svg = d3.select(".some-div").append("svg:svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("svg:g")
+            .attr("class", "container")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+          var arc = d3.svg.arc()
+            .innerRadius(radius - donutWidth)
+            .outerRadius(radius);
+
+          var arc_two = d3.svg.arc()
+            .innerRadius(radius - donutWidth - donutWidth)
+            .outerRadius(radius - donutWidth);
+
+          var pie = d3.layout.pie()
+            .value(function(d) {
+              return d.worse_3;
+            })
+
+          var pie_two = d3.layout.pie()
+            .value(function(d) {
+              return d.worse_5;
+            })
+
+          svg.append("svg:circle")
+            .attr("class", "center-circle")
+            .attr("r", radius)
+            .style("fill", "white")
+            .style("stroke", "black")
+            .style("opacity", 0);
+
+          var path = svg.selectAll("path")
+            .data(pie(data))
+            .enter().append("svg:path")
+            .attr("class", "pie1")
+            .attr("id",function(d){
+                return d.data.probe + "_id";
+            })
+            .attr("d", arc)
+            .style("stroke", "black")
+            .style("fill", function(d) {
+              if (d.data.probe == 'Gill_AF') {
+                return "#BA5F19";
+              } else if (d.data.probe == 'Gill_Sh') {
+                return "#F8740F";
+              } else if (d.data.probe == 'Gill_Lg') {
+                return "#F7A832";
+              } else if (d.data.probe == 'HJA_Sh') {
+                return "#E9C874";
+              } else if (d.data.probe == 'HJA_Lg') {
+                return "#F6EB21";
+              } else if (d.data.probe == 'Cotton') {
+                return "#FFFCF3";
+              }
+            })
+            .style("opacity", 1)
+            .on("mouseover", function(d) {
+                thisValue = d.data.probe + " : " + (100 * d.data.worse_3 / totalSize).toPrecision(3) + "%";
+      $("#show-value").text(thisValue);
+            });
+
+          var path_two = svg.selectAll("pie1")
+            .data(pie_two(data))
+            .enter().append("svg:path")
+            .attr("d", arc_two)
+            .style("stroke", "black")
+            .style("fill", function(d) {
+              console.log(d.data);
+              if (d.data.probe == 'Gill_AF') {
+                return "#BA5F19";
+              } else if (d.data.probe == 'Gill_Sh') {
+                return "#F8740F";
+              } else if (d.data.probe == 'Gill_Lg') {
+                return "#F7A832";
+              } else if (d.data.probe == 'HJA_Sh') {
+                return "#E9C874";
+              } else if (d.data.probe == 'HJA_Lg') {
+                return "#F6EB21";
+              } else if (d.data.probe == 'Cotton') {
+                return "#FFFCF3";
+              }
+            })
+            .style("opacity", 1)
+            .on("mouseover", function(d) {
+                thisValue = d.data.probe + " : " + (100 * d.data.worse_5 / totalSize).toPrecision(3) + "%";
+      $("#show-value").text(thisValue);
+            });
+        </script></div>
+        <div style="display:flex; flex-flow: row wrap; justify-content: center;"><p style="text-align: center; font-size: 60%"><strong>4518 values on PHRSC over the past 4.5 years have been at least 3 C different than the aspirated </strong>. 248 of those have been at least <b class="scaling" style="color:#F06D06;"> 5 C</b> different than the aspirated. ALL were greater than the aspirated. </p>
+        </div>
+    </div>
+
+     <div id="slide12" class="step" data-x="4500" data-y="-9000" data-rotate="270" data-scale="1">
+        <div style="display: flex; flex-flow: row no wrap; justify-content:center"> <p style="text-align: center;"> The <span class="slide12-original" style="text-decoration: line-through;">PVC</span><span style="color:white; text-shadow: 2px 2px 2px black;">HJA methods have more than <strong>70%</strong> of the "low-quality" values at PHRSC</span>, and they make up nearly 40% of the site history!</p>
+        </div>
+        <div id="centered" style="display: flex; justify-content:center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="150px" height="150px" viewBox="0 0 100 100"><g><path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M49.104,45.166c1.503-1.722,3.634-2.76,6.977-2.097  c0.951-1.097,2.896-2.406,5.053-2.263c1.233,0.07,2.437,0.613,3.318,1.282c0.098,0.084,0.246,0.127,0.408,0.187  c0.48-0.728,1.347-2.033,1.514-2.226c0.324-0.372,0.484-0.558,0.678-0.694c0.246-0.174,0.545-0.271,1.296-0.577  c2.912-1.193,4.832-0.088,6.245,1.144c0.708,0.615,1.214,1.673,1.774,2.51c0.993-0.432,2.125-1.069,3.3-1.305  c1.114-0.223,3.24,0.589,4.094,1.332c0.917,0.803,1.929,2.382,2.136,3.906c0.272,2.147-0.583,3.377-1.595,4.54  c-0.522,0.6-1.54,1.223-2.241,1.467c1.219,2.023,1.035,5.077-0.3,6.606c-1.98,2.274-4.234,2.994-8.034,1.389l-1.369,1.571  c-0.162,0.2-0.402,0.199-0.546,0.366c-1.994,2.094-7.033,1.492-9.265,0.143c-0.522-0.319-1.049,0.399-1.641,0.513  c-1.16,0.217-2.625-0.042-3.546-0.488c-0.273-0.137-0.611-0.355-0.806-0.525c-0.193-0.17-1.162-1.143-1.506-1.765  c-0.229-0.421-0.463-0.901-0.535-1.306c-0.162-0.908,0.224-2.739,0.029-2.908c-0.193-0.167-1.314-0.103-2.001-0.293  c-1.048-0.282-2.107-0.834-2.814-1.45c-1.074-0.937-1.91-2.192-2.132-3.833c-0.112-0.85,0.017-1.974,0.251-2.79  C48.083,46.784,48.937,45.359,49.104,45.166z M38.472,42.983c1.029-1.182,3.316-1.265,4.189-0.506  c0.473,0.414,0.115,1.039,0.075,1.088c-0.457,0.522-0.993-0.04-1.614-0.088c-0.257-0.019-0.624,0.088-0.93,0.052  c-0.119,0.117-0.423,0.311-0.592,0.505c-0.169,0.193-0.22,1.035-0.39,1.228c-0.404,0.464-1.028,0.125-1.086,0.074  C37.611,44.889,38.244,43.245,38.472,42.983z M31.486,45.685c0.742-0.854,2.182-0.824,2.897-0.2c0.833,0.725,1.112,2.008,0.345,2.89  c-0.667,0.764-2.162,1.249-3.102,0.43C30.94,48.206,30.853,46.41,31.486,45.685z M43.232,29.078  c0.398-0.456,2.704-1.183,3.395-0.802c0.358,0.194,0.991,0.537,1.187,0.707c0.193,0.168,0.217,0.532,0.05,0.724  c-0.168,0.193-0.366,0.201-0.507,0.19c-0.328-0.111-0.594-0.476-0.979-0.622c-0.448-0.17-0.951-0.027-1.488,0.102  c-0.321,0.076-0.696,0.311-1.084,0.533c-0.125,0.039-0.33,0.062-0.522-0.107C43.089,29.633,43.064,29.271,43.232,29.078z   M26.025,40.379c0.185-0.213,1.407-1.087,1.689-0.844c0.329,0.286,0.076,0.695-0.019,0.803c-0.167,0.193-0.695,0.484-0.863,0.678  c-0.32,0.368-0.636,1.724-0.535,2.267c0.034,0.11,0.056,0.314-0.112,0.507c-0.168,0.195-0.531,0.218-0.725,0.05  C24.667,43.148,25.67,40.785,26.025,40.379z M22.239,27.524l2.211-2.536c0.169-0.194,1.837-1.596,2.755-2.278  c3.457-2.541,10.419-4.532,16.134-3.368c0.923,0.19,1.958,0.332,2.694,0.699c0.375,0.194,0.937,0.343,1.415,0.557  c0.609,0.258,3.347,1.582,4.18,2.306l2.923,2.548c2.614,2.277,5.031,7.635,5.683,11.479c-2.081,0.317-3.989,1.379-5.391,2.046  c-0.556,0.266-1.479-0.082-2.306,0.066c-1.278,0.215-2.693,0.792-3.824,1.476c-0.282-0.592-0.444-1.331-0.882-1.712  c-0.725-0.633-1.974-0.546-2.607,0.179c-0.718,0.823-0.392,2.248,0.229,2.788c0.193,0.169,0.515,0.337,0.966,0.45  c-0.49,0.646-0.961,1.319-1.319,1.944c-0.154,0.257-0.203,0.666-0.371,0.859c-0.17,0.195-0.683,0.175-1.066,0.3  c-3.074,0.966-5.035,2.321-6.874,4.433c-0.169,0.192-0.62,0.672-1.469,1.84c-0.424,0.584-0.044,0.793,0.091,0.911  c0.252,0.219,0.672,0.246,0.909-0.025c0.936-1.093,1.307-1.655,1.475-1.85c1.435-1.646,3.554-3.137,6.207-3.993  c-0.984,5.055,0.644,8.328,3.161,10.522c0.193,0.169,1.469,1.012,2.279,1.487c-9.197,5.051-18.69,2.196-24.044-2.469  c-7.453-6.497-8.859-16.914-5.282-24.869C20.659,30.105,21.304,28.599,22.239,27.524z M12.709,15.006  c4.772,0.375,9.528,1.049,14.221,1.254c0.438,0.025,0.767-0.314,0.998-0.578L35.085,3.76l8.15,8.422  c0.85,0.488,1.842,1.606,2.055,1.792c0.505,0.438,2.054-0.459,2.393-0.573c3.95-1.327,7.945-2.749,11.947-4.098l1.446,14.89  l13.739,5.315l-3.312,4.87c0.606-0.031,3.962,0.989,4.837,1.761l1.499,1.306c2.299-1.077,6.841,0.501,8.476,1.928  c2.187,1.907,4.24,4.9,3.549,9.289c-0.152,0.957-0.693,1.988-1.193,2.951c-0.473,0.916-1.176,1.728-1.813,2.483  c0.344,3.441-0.529,5.743-2.21,7.67c-1.35,1.548-4.772,4.084-7.685,3.418c-0.61-0.14-1.423-0.07-2.105-0.151  c-0.333,0.213-0.754,0.524-1.064,0.782c-3.099,2.578-9.113,2.304-11.601,0.955c-0.16-0.089-0.57,0.172-0.772,0.169  c-1.242-0.061-2.809-0.072-3.828-0.243l-1.325,6.359c-4.529-2.097-9.112-4.183-13.545-6.18c-3.759,3.06-7.551,6.16-11.431,9.28  l-6.195-13.287c-0.183-0.037-0.4-0.244-0.783-0.254c-4.557-0.089-9.299-0.117-14.114-0.196c1.132-4.536,2.534-9.036,3.617-13.542  c0.105-0.453-0.135-1.271-0.315-1.455L2.974,38.249l11.5-8.068c0.111-0.275,0.365-0.523,0.325-0.849  C14.268,24.663,13.377,19.922,12.709,15.006z"/></g></svg>
+        </div>
+        <div style="display: flex; flex-flow: row no wrap; justify-content:center"> <p style="text-align: center;"> &#x2600; There's also <strong>significant differences</strong> between the Gill "large" and "short" method (12-plated shield, 10-plated shield) and the Gill "AF" (filter) method.</p>
+        </div>
+        <div id="centered" style="display: flex; flex-flow: row no wrap; justify-content:center">
+        <p style="text-align: center;"> &#x2600; More Gill shields performed <strong> very </strong> poorly (outside the 5 C difference range) than did HJA shields, relative to the number that were at least 3 C different. </p>
+        </div>
+        <div id="centered" style="display: flex; flex-flow: row no wrap; justify-content:center">
+            <p style="text-align: center; font-size: 60%; padding-top:5%; color:#F06D06; text-shadow: 2px 2px 2px black;"> But the cotton shield was suprisingly similar to the aspirated.</p>
+        </div>
+    </div>
+
+    <div id="slide13" class="step" data-x="4500" data-y="-10000" data-rotate="270" data-scale="1">
+        <div style="display:flex; flex-flow: row wrap; justify-content:center "><p style="padding-bottom: 5%; text-align: center"> The expectation was that the cotton shield would have the greatest number and magnitude of low-quality values </p></div>
+            <div style="display: flex; flex-flow: row no wrap; justify-content:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="200px" height="200px" viewBox="0 0 100 100"><g class="metstation-1" fill="white" stroke="blue" stroke-width="1px"><path d="M90.32,26.84c0,9.73-6.396,17.966-15.217,20.731L56.027,28.493L35.957,48.562l0,0H21.396v-0.007  c-0.05,0.001-0.099,0.007-0.149,0.007c-6.388,0-11.567-5.178-11.567-11.566s5.179-11.567,11.567-11.567  c0.05,0,0.099,0.007,0.149,0.007v-0.108h3.568c-0.092-0.64-0.156-1.288-0.156-1.953c0-7.495,6.076-13.57,13.57-13.57  c4.779,0,8.973,2.476,11.39,6.21c3.75-6.512,10.776-10.898,18.831-10.898C80.596,5.117,90.32,14.842,90.32,26.84z M35.957,57.014  v12.625V82.26v12.623h3.841V82.26h32.456v12.623h3.842V82.26V69.639V57.014L56.027,36.945L35.957,57.014z"/></g></svg></div>
+            <div style="display: flex; flex-flow: row no wrap; justify-content:center;"> <p style="font-size:60%; padding-left:20%; padding-bottom:5%; text-shadow: 2px 1px 1px white;">Otherwise known as Stephenson shields, cotton shields are basically double-louved protective "boxes" that originally deployed in Hyde Garden, London, in the 1630's! </p></div>
+        <div style=" display: flex; flex-flow: row wrap; justify-content:center">
+            <p style="text-align: left;"> Note that cotton shields fully enclose the temperature sensor, even underneath.</p>
+            <p style="color:white; text-shadow: 2px 2px 2px blue; text-align: right;">Would this protect the sensor more, or alter its data for the worse? </p>
+        </div>
+    </div>
+
+    <div id="slide14" class="step" data-x="9000" data-y="2500" data-scale="6">
+        <div style="display:flex; flex-flow: row wrap; justify-content:center "><p style="padding-bottom: 5%; text-align: center"> Of the <strong>2849 unique 5 minute times</strong> where temperature difference is > 3 C by at least one of the other sensors... </p></div>
+        <div style=" display: flex; flex-flow: row no wrap; justify-content:center">
+            <svg id="wind" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><rect fill="none" width="100" height="100"/><g><path d="M85.889,37.077c-0.094-0.102-0.198-0.198-0.31-0.286L48.306,7.036c-0.121-0.097-0.264-0.141-0.394-0.216  c-0.299-0.234-0.548-0.517-0.882-0.71C45.754,5.374,44.315,5,42.754,5c-2.303,0-4.74,0.858-7.119,2.348L20.454,9.013  c-0.805-1.939-2.716-3.312-4.945-3.312c-2.954,0-5.356,2.404-5.356,5.356c0,1.904,1.008,3.569,2.51,4.518  c-0.06,0.234-0.145,0.458-0.145,0.713V92.01c0,1.653,1.339,2.99,2.991,2.99c1.652,0,2.991-1.337,2.991-2.99V21.662l3.857,8.841  c-0.128,4.641,1.387,8.455,4.636,10.33c0.351,0.202,0.743,0.31,1.117,0.458c0.109,0.059,0.206,0.138,0.324,0.184l44.411,17.379  c0.122,0.047,0.251,0.088,0.373,0.117c1.172,0.38,2.396,0.572,3.64,0.572c4.535,0,8.82-2.541,11.177-6.631  C91.107,47.585,90.193,40.979,85.889,37.077z M75.158,45.486c-1.642,2.842-3.674,4.76-5.479,5.707l-4.699-1.837  c2.114-1.577,4.089-3.809,5.64-6.49c1.548-2.684,2.491-5.511,2.798-8.131l3.948,3.151C77.442,39.922,76.797,42.644,75.158,45.486z   M56.35,45.977c2.421-1.688,4.775-4.244,6.659-7.506c1.887-3.271,2.9-6.586,3.146-9.533l4.372,3.487  c0.018,0.289,0.053,0.561,0.041,0.873c-0.064,2.483-0.97,5.348-2.541,8.073c-1.571,2.722-3.602,4.939-5.716,6.235  c-0.266,0.164-0.52,0.272-0.776,0.4L56.35,45.977z M47.966,42.694c2.78-1.837,5.5-4.731,7.662-8.479  c2.083-3.609,3.292-7.438,3.505-10.885l4.054,3.239c0.28,2.708-0.508,6.487-2.769,10.406c-2.264,3.919-5.143,6.499-7.626,7.608  L47.966,42.694z M30.7,35.859c-0.251-0.053-0.513-0.09-0.717-0.208c-2.504-1.445-2.345-8.446,1.612-15.307  c3.547-6.148,8.299-9.364,11.16-9.364c0.504,0,0.924,0.1,1.285,0.31c0.222,0.129,0.396,0.348,0.574,0.558  c0.124,0.146,0.244,0.301,0.348,0.482c0.111,0.196,0.203,0.417,0.289,0.654c0.067,0.181,0.134,0.359,0.187,0.561  c0.086,0.345,0.146,0.724,0.188,1.125c0.014,0.14,0.036,0.269,0.046,0.415c0.034,0.538,0.029,1.116-0.015,1.729  c-0.003,0.044-0.001,0.085-0.006,0.128c-0.165,2.033-0.767,4.425-1.84,6.899c-0.031,0.07-0.051,0.137-0.083,0.207  c-0.332,0.748-0.725,1.501-1.146,2.255c-0.056,0.099-0.095,0.196-0.152,0.295c-0.075,0.131-0.159,0.237-0.235,0.365  c-0.437,0.727-0.882,1.431-1.346,2.073c-0.292,0.403-0.596,0.751-0.896,1.119c-0.251,0.313-0.498,0.643-0.754,0.929  c-0.428,0.479-0.861,0.903-1.293,1.312c-0.124,0.117-0.247,0.254-0.371,0.365c-0.495,0.444-0.987,0.835-1.472,1.188  c-0.058,0.044-0.12,0.097-0.178,0.137c-0.491,0.348-0.97,0.637-1.436,0.885c-0.059,0.032-0.12,0.073-0.178,0.102  c-0.428,0.222-0.837,0.383-1.234,0.52c-0.1,0.035-0.203,0.079-0.299,0.105c-0.334,0.102-0.641,0.152-0.942,0.187  c-0.149,0.018-0.298,0.038-0.437,0.041C31.122,35.93,30.907,35.9,30.7,35.859z M39.04,39.201c0.125-0.085,0.245-0.202,0.369-0.289  c0.456-0.324,0.904-0.684,1.351-1.058c0.305-0.251,0.609-0.497,0.908-0.771c0.431-0.394,0.848-0.826,1.268-1.265  c0.292-0.307,0.588-0.593,0.873-0.92c0.432-0.491,0.844-1.028,1.257-1.565c0.244-0.315,0.5-0.61,0.736-0.943  c0.634-0.888,1.242-1.819,1.81-2.804c0.643-1.113,1.196-2.237,1.685-3.359c0.28-0.634,0.492-1.253,0.723-1.881  c0.158-0.432,0.33-0.864,0.464-1.293c0.263-0.833,0.464-1.639,0.639-2.445c0.04-0.184,0.082-0.365,0.117-0.546  c0.181-0.92,0.302-1.811,0.366-2.684c0.002-0.015,0.006-0.032,0.008-0.05l4.502,3.595c0.067,0.538,0.108,1.101,0.091,1.711  c-0.082,3.104-1.21,6.686-3.169,10.085c-2.598,4.506-5.852,7.398-8.65,8.575L39.04,39.201z M15.509,8.692  c1.303,0,2.363,1.06,2.363,2.366c0,1.194-0.905,2.146-2.059,2.301c-0.105-0.012-0.195-0.061-0.304-0.061  c-0.108,0-0.198,0.049-0.304,0.061c-1.153-0.155-2.062-1.107-2.062-2.301C13.144,9.752,14.206,8.692,15.509,8.692z M18.922,15.146  c0.948-0.792,1.622-1.89,1.847-3.157l10.596-1.163c-1.806,1.834-3.501,4.016-4.952,6.528c-1.475,2.559-2.535,5.123-3.217,7.588  L18.922,15.146z M82.854,49.925c-1.65,2.865-5.088,4.315-7.93,3.311c-0.041-0.012-0.085-0.029-0.129-0.041l-1.729-0.673  c1.711-1.353,3.347-3.23,4.679-5.543c1.332-2.307,2.155-4.661,2.471-6.813l1.417,1.13c0.038,0.038,0.078,0.076,0.122,0.111  C84.084,43.406,84.545,46.99,82.854,49.925z"/></g></svg>
+            <svg id="solar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100px" height="100px" viewBox="0 0 100 105" <g><path fill-rule="evenodd" clip-rule="evenodd" d="M86.8,95H56.8c-2.6,0-4.8-2.2-4.8-4.8V58.9v-6.4v-9.3c0-2.6,2.2-4.8,4.8-4.8h0.5    h6h23.6c2.6,0,4.8,2.2,4.8,4.8v47C91.6,92.8,89.5,95,86.8,95z M69.2,88.4c0.7,0.7,1.6,1.1,2.6,1.1c2,0,3.7-1.7,3.7-3.7    c0-1-0.4-1.9-1.1-2.6c-0.7-0.7-1.6-1.1-2.6-1.1c-2,0-3.7,1.7-3.7,3.7C68.1,86.8,68.5,87.8,69.2,88.4z M71.8,78.7    c2,0,3.7-1.7,3.7-3.7c0-2-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7C68.1,77.1,69.8,78.7,71.8,78.7z M71.8,67.9c2,0,3.7-1.7,3.7-3.7    c0-2-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7C68.1,66.2,69.8,67.9,71.8,67.9z M57.6,88.4c0.7,0.7,1.6,1.1,2.6,1.1    c2,0,3.7-1.7,3.7-3.7c0-1-0.4-1.9-1.1-2.6c-0.7-0.7-1.6-1.1-2.6-1.1c-2,0-3.7,1.7-3.7,3.7C56.6,86.8,57,87.8,57.6,88.4z     M60.3,78.7c2,0,3.7-1.7,3.7-3.7c0-2-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7C56.6,77.1,58.2,78.7,60.3,78.7z M60.3,67.9    c2,0,3.7-1.7,3.7-3.7c0-2-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7C56.6,66.2,58.2,67.9,60.3,67.9z M83.4,46.4H63h-2.8    c-2,0-3.7,1.7-3.7,3.7c0,1.7,1.2,3.2,2.8,3.6c0.3,0.1,0.6,0.1,0.9,0.1h23.1c2,0,3.7-1.7,3.7-3.7S85.4,46.4,83.4,46.4z M83.4,60.5    c-1,0-1.9,0.4-2.6,1.1s-1.1,1.6-1.1,2.6c0,2,1.7,3.7,3.7,3.7c2,0,3.7-1.7,3.7-3.7C87,62.2,85.4,60.5,83.4,60.5z M83.4,71.3    c-1,0-1.9,0.4-2.6,1.1c-0.7,0.7-1.1,1.6-1.1,2.6c0,2,1.7,3.7,3.7,3.7c2,0,3.7-1.7,3.7-3.7C87,73,85.4,71.3,83.4,71.3z M86,83.2    c-0.7-0.7-1.6-1.1-2.6-1.1c-1,0-1.9,0.4-2.6,1.1c-0.7,0.7-1.1,1.6-1.1,2.6s0.4,1.9,1.1,2.6c0.7,0.7,1.6,1.1,2.6,1.1    c2,0,3.7-1.7,3.7-3.7C87,84.8,86.6,83.9,86,83.2z M62.9,28.6l-0.9-1c-0.7-0.8-1.4-1.6-2.2-2.3l-1-0.9l8.6-8.6    c0.5-0.5,1.3-0.8,2-0.8c0.8,0,1.5,0.3,2.1,0.9c0.5,0.5,0.8,1.3,0.8,2.1c0,0.8-0.3,1.5-0.9,2L62.9,28.6z M62.2,35h-5.4    c-0.4,0-0.7,0-1.1,0.1c-2.2-3.3-6-5.5-10.3-5.5c-6.9,0-12.4,5.6-12.4,12.4c0,6.9,5.6,12.4,12.4,12.4c1.1,0,2.2-0.1,3.3-0.4v5.9    c-1.1,0.2-2.2,0.3-3.3,0.3c-4.9,0-9.4-1.9-12.9-5.3c-3.4-3.4-5.3-8-5.3-12.9c0-4.9,1.9-9.4,5.3-12.9c3.4-3.4,8-5.3,12.9-5.3    c4.9,0,9.4,1.9,12.9,5.3C60,30.8,61.3,32.8,62.2,35z M47,20c-1-0.1-2.1-0.1-3.2,0l-1.3,0.1l0-12.2c0-1.6,1.3-2.9,2.9-2.9    c0.8,0,1.5,0.3,2.1,0.9c0.5,0.5,0.8,1.3,0.8,2.1l0,12.2L47,20z M28.7,27.5l-0.9,1l-8.6-8.6c-1.1-1.1-1.1-3,0-4.1    c0.5-0.5,1.3-0.8,2-0.8c0.8,0,1.5,0.3,2.1,0.9l8.6,8.6l-1,0.9C30.2,25.9,29.4,26.7,28.7,27.5z M23.4,40.3c-0.1,1.1-0.1,2.1,0,3.2    l0.1,1.3l-12.2,0c-0.8,0-1.5-0.3-2-0.9c-0.5-0.5-0.8-1.3-0.8-2.1c0-1.6,1.3-2.9,2.9-2.9l12.2,0L23.4,40.3z M27.8,55.4l0.9,1    c0.7,0.8,1.4,1.6,2.2,2.3l1,0.9l-8.6,8.6c-0.5,0.5-1.3,0.8-2,0.8c-0.8,0-1.5-0.3-2.1-0.9c-1.1-1.1-1.1-3,0-4.1L27.8,55.4z     M43.7,64c1,0.1,2.1,0.1,3.2,0l1.3-0.1l0,12.2c0,1.6-1.3,2.9-2.9,2.9h0c-1.6,0-2.9-1.3-2.9-2.9l0-12.2L43.7,64z"/></g>
+        </div>
+        <div style=" display: flex; flex-flow: row no wrap; justify-content:center">
+            <p id="wind-data" style="text-align:center; padding-top:10px; display: none"><strong>Only 4 of those times have wind speeds greater than 0.5 m/s.</strong> The air is relatively stagnant, regardless of sensor housing. </p>
+            <p id="sun-data" style="text-align:center; padding-top:10px; display: none"><strong> Less than one percent of the down-welling solar values during this time were > 900 Watts per square meter</strong>; in fact,<strong>none were even in the top 15%</strong> for all values during the PHRSC's deployment</p>
+            <script>
+            $(document).click(function(){
+                $("#wind-data").fadeToggle("slow");
+                $("#sun-data").fadeToggle("slow");
+            });
+            </script>
+        </div>
+    </div>
+
+    <div id="slide15" class="step" data-x="-10000" data-y="3300" data-scale="6">
+        <p style="display: inline-block; justify-content: space-between; flex-flow: row wrap; font-size:30px;"> So if the wind is <span style="font-size:70%; color:blue;"> minimal </span>, and the solar exposure is consistent, <span style="font-size: 110%; text-shadow: 2px 2px 2px rgba(0,0,200, 0.5);">what's happening?</span></p>
+        <p style="display: flex; flex-flow: row wrap; justify-content: space-around;"> Here's where it gets interesting: nearly all of the <b class="scaling" style="color:#F06D06;"> most extreme </b></p><p> differences occur during the <b class="imagination" style="font-size: 110%;"><span style="text-shadow: 2px 2px 2px rgba(0,0,200, 0.5);">last week of February or the first week of March</span> or <span style="text-shadow: 2px 2px 2px orange;">during the beginning of September.</span></b></p>
+        <p style="font-size:70%; padding-top:5%; padding-left:30%; text-shadow: 2px 2px 2px white;"> (this is split mostly towards March on all of the shields except the cotton, where it is split equally between seasons)</p>
+    </div>
+
+    <div id="slide16" class="step" data-x="7000" data-y="-5000" data-rotate="-20" data-scale="4">
+        <div id="centered" style="display: flex; flex-flow: row wrap; justify-content:center">
+        <p style="text-align: center;"> That these differences from the aspirated are greatest almost exactly six months apart may be a clue that the solar cycle may be involved </p>
+            <svg fill="yellow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="200px" height="200px" viewBox="0 0 100 100"><style type="text/css">
+                <![CDATA[
+                @keyframes rotate {from {transform: rotate(0deg);}  to {transform: rotate(-360deg);}}
+                #night{
+                    transform-origin:center;
+                    animation-name: rotate; 
+                    animation-duration: 3s; 
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                    }
+                ]]>
+                </style>
+                <g id="night"><circle cx="50.162" cy="49.99" r="16.662"/><path fill="orange" d="M12.813,33.328l15.86-3.719L22.5,25.782c0.539-0.614,1.093-1.214,1.666-1.788c14.335-14.334,37.656-14.334,51.992,0   c3.032,3.033,5.484,6.519,7.289,10.361l7.465-3.504c-2.21-4.709-5.213-8.978-8.923-12.688c-17.55-17.551-46.105-17.55-63.653,0   c-1.021,1.021-1.988,2.113-2.911,3.233l-6.335-3.927L12.813,33.328z"/><path fill="blue" d="M86.911,67.935l-15.987,3.137l6.028,4.048c-0.27,0.287-0.518,0.589-0.794,0.866c-6.944,6.943-16.176,10.768-25.998,10.768   c-9.82,0-19.051-3.824-25.994-10.768c-3.014-3.014-5.455-6.474-7.255-10.286l-7.458,3.523c2.208,4.671,5.196,8.909,8.882,12.593   C26.836,90.318,38.138,95,50.16,95h0.001c12.023,0,23.326-4.682,31.827-13.184c0.656-0.656,1.287-1.341,1.902-2.036l6.162,4.14   L86.911,67.935z"/><polygon points="50.337,23.618 46.98,30.46 53.693,30.46  "/><polygon points="69.692,46.809 69.692,53.521 76.533,50.166  "/><polygon points="49.986,76.361 53.343,69.52 46.63,69.52  "/><polygon points="30.632,53.171 30.632,46.458 23.79,49.814  "/><polygon points="63.268,27.104 56.984,31.416 62.832,34.712  "/><polygon points="68.736,56.811 65.438,62.658 73.046,63.096  "/><polygon points="37.055,72.873 43.34,68.563 37.493,65.265  "/><polygon points="34.884,37.319 27.277,36.881 31.586,43.166  "/><polygon points="72.897,36.626 65.304,37.25 68.743,43.014  "/><polygon points="63.524,72.727 62.901,65.129 57.136,68.569  "/><polygon points="31.582,56.963 27.425,63.351 35.022,62.729  "/><polygon points="36.801,27.252 37.421,34.846 43.186,31.407  "/></g>
+        </div>
+        <p id="clickme" style="text-align: center;font-size:70%;"><strong> Radiometer up </strong>: the PHRSC site has a <span style="color:yellow; text-shadow: 2px 2px 2px black;">solar azimuth</span> of <strong>approximately 218 degrees on this day in both seasons </strong>, and during the afternoon hours between 12:00 and 15:00 PM when many of the greatest differences from the aspirated sensor occured, the solar elevation angle is approximately <strong>38 degrees</strong>.<b class="scaling">Maybe there is some trigonometry at work?</b></p>
+    </div>
+
+    <div id="slide17" class="step" data-x="9000" data-y="-3000" data-rotate="-20" data-scale="3">
+        <div style="display: flex; flex-flow: left;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" width="100px" height="100px" xml:space="preserve"><path fill="#00CC33" d="M94.947,79.482c-0.071,0-0.142,0.006-0.212,0.012c-0.027-0.002-0.05-0.008-0.076-0.008H78.354l-0.288-9.894  l12.921,0.023c2.344,0.018,3.089-0.305,3.13-1.85c0.025-0.975-1.216-2.284-1.216-2.284s-4.473-5.363-7.64-8.603h2.79  c2.345,0.018,3.089-0.308,3.129-1.851c0.025-0.973-1.214-2.285-1.214-2.285s-4.132-3.796-7.265-6.968l0.089-0.409l2.668,0.026  c2.346,0.019,3.089-0.306,3.13-1.85c0.028-0.974-1.216-2.286-1.216-2.286s-7.525-7.542-9.961-10.5  c-0.365-0.444-0.716-0.775-1.044-1.023v-0.022c0,0-0.593-0.647-1.567-0.606c-0.976-0.041-1.565,0.606-1.565,0.606v0.022  c-0.331,0.248-0.679,0.579-1.043,1.023c-2.438,2.958-9.964,10.5-9.964,10.5s-1.868,1.312-1.842,2.286  c0.041,1.543,1.411,1.869,3.754,1.85l2.67-0.026l0.089,0.409c-3.131,3.171-7.262,6.968-7.262,6.968s-1.244,1.312-1.217,2.285  c0.041,1.543,0.786,1.868,3.131,1.851h2.787c-0.974,0.998-2.072,2.078-3.126,3.094c0.877,0.817,1.422,1.32,1.441,1.338l0.063,0.057  l0.06,0.064c5.185,5.186,1.662,8.172,1.662,8.172l7.098-0.012l-0.289,9.894H37.468l-0.415-9.954l20.312,0.034  c3.638,0.029,4.792-0.475,4.855-2.87c0.04-1.511-1.886-3.545-1.886-3.545s-6.94-6.38-11.853-11.405h4.328  c3.639,0.029,4.791-0.475,4.856-2.868c0.038-1.513-1.887-3.547-1.887-3.547s-6.41-5.89-11.267-10.81l0.137-0.637l4.139,0.042  c3.64,0.029,4.793-0.475,4.858-2.87c0.038-1.511-1.888-3.546-1.888-3.546S40.081,16.153,36.301,11.563  c-0.565-0.687-1.108-1.202-1.62-1.585V9.943c0,0-0.919-1.005-2.431-0.94c-1.512-0.065-2.43,0.94-2.43,0.94v0.035  c-0.512,0.384-1.054,0.898-1.62,1.585c-3.78,4.59-15.457,15.948-15.457,15.948s-1.926,2.035-1.887,3.546  c0.063,2.395,1.219,2.898,4.856,2.87l4.14-0.042l0.138,0.637c-4.86,4.92-11.27,10.81-11.27,10.81s-1.926,2.034-1.886,3.547  c0.063,2.394,1.218,2.897,4.857,2.868h4.326C11.108,56.771,4.166,63.151,4.166,63.151s-1.924,2.034-1.885,3.545  c0.062,2.396,1.217,2.899,4.856,2.87l20.222-0.034l-0.415,9.954H5.507c-0.025,0-0.049,0.006-0.075,0.008  c-0.071-0.006-0.141-0.012-0.212-0.012c-2.08,0-3.766,1.687-3.766,3.767c0,2.079,1.687,3.765,3.766,3.765  c0.113,0,0.223-0.007,0.333-0.018h89.062c0.108,0.011,0.22,0.018,0.332,0.018c2.079,0,3.766-1.686,3.766-3.765  C98.713,81.169,97.026,79.482,94.947,79.482z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" width="100px" height="100px" xml:space="preserve"><path fill="#00CC33" d="M94.947,79.482c-0.071,0-0.142,0.006-0.212,0.012c-0.027-0.002-0.05-0.008-0.076-0.008H78.354l-0.288-9.894  l12.921,0.023c2.344,0.018,3.089-0.305,3.13-1.85c0.025-0.975-1.216-2.284-1.216-2.284s-4.473-5.363-7.64-8.603h2.79  c2.345,0.018,3.089-0.308,3.129-1.851c0.025-0.973-1.214-2.285-1.214-2.285s-4.132-3.796-7.265-6.968l0.089-0.409l2.668,0.026  c2.346,0.019,3.089-0.306,3.13-1.85c0.028-0.974-1.216-2.286-1.216-2.286s-7.525-7.542-9.961-10.5  c-0.365-0.444-0.716-0.775-1.044-1.023v-0.022c0,0-0.593-0.647-1.567-0.606c-0.976-0.041-1.565,0.606-1.565,0.606v0.022  c-0.331,0.248-0.679,0.579-1.043,1.023c-2.438,2.958-9.964,10.5-9.964,10.5s-1.868,1.312-1.842,2.286  c0.041,1.543,1.411,1.869,3.754,1.85l2.67-0.026l0.089,0.409c-3.131,3.171-7.262,6.968-7.262,6.968s-1.244,1.312-1.217,2.285  c0.041,1.543,0.786,1.868,3.131,1.851h2.787c-0.974,0.998-2.072,2.078-3.126,3.094c0.877,0.817,1.422,1.32,1.441,1.338l0.063,0.057  l0.06,0.064c5.185,5.186,1.662,8.172,1.662,8.172l7.098-0.012l-0.289,9.894H37.468l-0.415-9.954l20.312,0.034  c3.638,0.029,4.792-0.475,4.855-2.87c0.04-1.511-1.886-3.545-1.886-3.545s-6.94-6.38-11.853-11.405h4.328  c3.639,0.029,4.791-0.475,4.856-2.868c0.038-1.513-1.887-3.547-1.887-3.547s-6.41-5.89-11.267-10.81l0.137-0.637l4.139,0.042  c3.64,0.029,4.793-0.475,4.858-2.87c0.038-1.511-1.888-3.546-1.888-3.546S40.081,16.153,36.301,11.563  c-0.565-0.687-1.108-1.202-1.62-1.585V9.943c0,0-0.919-1.005-2.431-0.94c-1.512-0.065-2.43,0.94-2.43,0.94v0.035  c-0.512,0.384-1.054,0.898-1.62,1.585c-3.78,4.59-15.457,15.948-15.457,15.948s-1.926,2.035-1.887,3.546  c0.063,2.395,1.219,2.898,4.856,2.87l4.14-0.042l0.138,0.637c-4.86,4.92-11.27,10.81-11.27,10.81s-1.926,2.034-1.886,3.547  c0.063,2.394,1.218,2.897,4.857,2.868h4.326C11.108,56.771,4.166,63.151,4.166,63.151s-1.924,2.034-1.885,3.545  c0.062,2.396,1.217,2.899,4.856,2.87l20.222-0.034l-0.415,9.954H5.507c-0.025,0-0.049,0.006-0.075,0.008  c-0.071-0.006-0.141-0.012-0.212-0.012c-2.08,0-3.766,1.687-3.766,3.767c0,2.079,1.687,3.765,3.766,3.765  c0.113,0,0.223-0.007,0.333-0.018h89.062c0.108,0.011,0.22,0.018,0.332,0.018c2.079,0,3.766-1.686,3.766-3.765  C98.713,81.169,97.026,79.482,94.947,79.482z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" width="100px" height="100px" xml:space="preserve"><path fill="#00CC33" d="M94.947,79.482c-0.071,0-0.142,0.006-0.212,0.012c-0.027-0.002-0.05-0.008-0.076-0.008H78.354l-0.288-9.894  l12.921,0.023c2.344,0.018,3.089-0.305,3.13-1.85c0.025-0.975-1.216-2.284-1.216-2.284s-4.473-5.363-7.64-8.603h2.79  c2.345,0.018,3.089-0.308,3.129-1.851c0.025-0.973-1.214-2.285-1.214-2.285s-4.132-3.796-7.265-6.968l0.089-0.409l2.668,0.026  c2.346,0.019,3.089-0.306,3.13-1.85c0.028-0.974-1.216-2.286-1.216-2.286s-7.525-7.542-9.961-10.5  c-0.365-0.444-0.716-0.775-1.044-1.023v-0.022c0,0-0.593-0.647-1.567-0.606c-0.976-0.041-1.565,0.606-1.565,0.606v0.022  c-0.331,0.248-0.679,0.579-1.043,1.023c-2.438,2.958-9.964,10.5-9.964,10.5s-1.868,1.312-1.842,2.286  c0.041,1.543,1.411,1.869,3.754,1.85l2.67-0.026l0.089,0.409c-3.131,3.171-7.262,6.968-7.262,6.968s-1.244,1.312-1.217,2.285  c0.041,1.543,0.786,1.868,3.131,1.851h2.787c-0.974,0.998-2.072,2.078-3.126,3.094c0.877,0.817,1.422,1.32,1.441,1.338l0.063,0.057  l0.06,0.064c5.185,5.186,1.662,8.172,1.662,8.172l7.098-0.012l-0.289,9.894H37.468l-0.415-9.954l20.312,0.034  c3.638,0.029,4.792-0.475,4.855-2.87c0.04-1.511-1.886-3.545-1.886-3.545s-6.94-6.38-11.853-11.405h4.328  c3.639,0.029,4.791-0.475,4.856-2.868c0.038-1.513-1.887-3.547-1.887-3.547s-6.41-5.89-11.267-10.81l0.137-0.637l4.139,0.042  c3.64,0.029,4.793-0.475,4.858-2.87c0.038-1.511-1.888-3.546-1.888-3.546S40.081,16.153,36.301,11.563  c-0.565-0.687-1.108-1.202-1.62-1.585V9.943c0,0-0.919-1.005-2.431-0.94c-1.512-0.065-2.43,0.94-2.43,0.94v0.035  c-0.512,0.384-1.054,0.898-1.62,1.585c-3.78,4.59-15.457,15.948-15.457,15.948s-1.926,2.035-1.887,3.546  c0.063,2.395,1.219,2.898,4.856,2.87l4.14-0.042l0.138,0.637c-4.86,4.92-11.27,10.81-11.27,10.81s-1.926,2.034-1.886,3.547  c0.063,2.394,1.218,2.897,4.857,2.868h4.326C11.108,56.771,4.166,63.151,4.166,63.151s-1.924,2.034-1.885,3.545  c0.062,2.396,1.217,2.899,4.856,2.87l20.222-0.034l-0.415,9.954H5.507c-0.025,0-0.049,0.006-0.075,0.008  c-0.071-0.006-0.141-0.012-0.212-0.012c-2.08,0-3.766,1.687-3.766,3.767c0,2.079,1.687,3.765,3.766,3.765  c0.113,0,0.223-0.007,0.333-0.018h89.062c0.108,0.011,0.22,0.018,0.332,0.018c2.079,0,3.766-1.686,3.766-3.765  C98.713,81.169,97.026,79.482,94.947,79.482z"/></svg>
+        </div>
+        <ul id = "magicsun" style="text-align: center; color:#F06D06; text-shadow: 1px 1px 1px black;"> 
+            <li><span style="color:black;">Distance from the PHRSC to edge to edge of forest at ~215 degree azimuth:</span><strong>~270m</strong> </li>
+            <li><span style="color:black;">Solar angle:</span><strong>~38 degrees</strong></li>
+            <li>Minimum <span style="color:black;">tree height required to intercept sun:</span><strong>84m</strong></li>
+        </ul>
+        <p style="font-size: 70%; text-align:center;"> Recall that the imposed 3 C threshold is absolute (not normalized based on the maximum of the day). So seasonal radiation patterns in March and September that decrease the quality of air temperature readings relative to the aspirated shield are not necessarily coupled with general "hotness"</p>
+        <p id="gophrsc" style="padding-top: 2%; font-size: 70%; text-align:center;">In short, when we look <b> radiometer side "up"</b>, the solar regime at our site indicates the potential for an extended duration of incident radiation.</p>
+    </div>
+
+
+    <div id="slide18" class="step" data-x="9500" data-y="-500" data-rotate="-40" data-scale="3">
+        <p style="font-size:120%;"> But a net radiometer also has a <b> "side down"</b>, and maybe we are looking in the wrong direction...</p>
+         <div id="centered" style="display: flex; flex-flow: row no wrap; justify-content: space-around;">
+           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" height="200px" width="200px" viewBox="0 0 30 30">
+            <style type="text/css">
+                <![CDATA[
+                    @keyframes switch-triangle{
+                      0%, 100%{opacity: 1;}
+                      50%{opacity: 0;}
+                    }
+                    #left-triangle{
+                      animation: switch-triangle 2s linear infinite;
+                    }
+                    #right-triangle{
+                      animation-name: switch-triangle;
+                      animation-delay: 1s;
+                        animation-duration: 2s; 
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }
+                ]]>
+                </style><g><g><path d="M19.632,5.368c-0.128,0-0.256-0.049-0.354-0.146c-4.315-4.314-10.111-4.313-14.425,0c-0.195,0.195-0.512,0.195-0.707,0    s-0.195-0.512,0-0.707c4.662-4.663,11.177-4.662,15.839,0c0.195,0.195,0.195,0.512,0,0.707C19.888,5.319,19.76,5.368,19.632,5.368    z"/><path  d="M20,6h-4c-0.276,0-0.5-0.224-0.5-0.5S15.724,5,16,5h3.5V1.5C19.5,1.224,19.724,1,20,1s0.5,0.224,0.5,0.5v4    C20.5,5.776,20.276,6,20,6z"/></g><path  id="left-triangle" fill="red" d="M1,23c-0.064,0-0.13-0.012-0.191-0.038C0.622,22.885,0.5,22.702,0.5,22.5v-18c0-0.202,0.122-0.385,0.309-0.462   C0.994,3.96,1.211,4.004,1.354,4.146l9,9c0.195,0.195,0.195,0.512,0,0.707l-9,9C1.258,22.949,1.13,23,1,23z M1.5,5.707v15.586   L9.293,13.5L1.5,5.707z"/><path id="right-triangle" fill="blue" d="M23,23c-0.13,0-0.258-0.051-0.354-0.146l-9-9c-0.195-0.195-0.195-0.512,0-0.707l9-9c0.143-0.143,0.358-0.187,0.545-0.108   C23.378,4.115,23.5,4.298,23.5,4.5v18c0,0.202-0.122,0.385-0.309,0.462C23.13,22.988,23.064,23,23,23z M14.707,13.5l7.793,7.793   V5.707L14.707,13.5z"/><path d="M12,23c-0.276,0-0.5-0.224-0.5-0.5v-2c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v2C12.5,22.776,12.276,23,12,23z"/><path d="M12,18c-0.276,0-0.5-0.224-0.5-0.5v-2c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v2C12.5,17.776,12.276,18,12,18z"/><path d="M12,13c-0.276,0-0.5-0.224-0.5-0.5v-2c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v2C12.5,12.776,12.276,13,12,13z"/><path d="M12,8c-0.276,0-0.5-0.224-0.5-0.5v-2C11.5,5.224,11.724,5,12,5s0.5,0.224,0.5,0.5v2C12.5,7.776,12.276,8,12,8z"/></g>
+        </div>
+    </div>
+
+    <div id="slide19" class="step" data-x="11000" data-y="-6000" data-rotate="-60" data-scale="4">
+        <p style="padding-bottom:5%;">Why does the enclosed cotton shield have <strong>so many less "bad values"</strong> than the bottom-ventilated shields?</p>
+        <div id="centered" style="display: flex; justify-content:space-around">
+        <img src="netrad.png" width="350px" height="350px"></img>
+        <img src="stephenson.png" width="350px" height="350px"></img>
+        </div>
+        <p style="padding-top:5%;"> And why does it have (less overall but) <strong>almost equal "bad values"</strong> through both parts of the year?</p>
+         <p style="padding-top:2%; font-size:60%;"> In short, what is the benefit to being enclosed, and why is it not seasonal?</p>
+    </div>
+
+    <div id="slide20" class="step" data-x="6000" data-y="-11000" data-rotate="-90" data-scale="2">
+        <div style="display: flex; flex-flow: row wrap; justify-content: space-around; text-align: center;">
+        <p>In Oregon, <span style="text-shadow: 2px 2px 2px rgba(0,0,200,0.5);">March</span> is in the middle of the rainy season, while <span style="text-shadow: 2px 2px 2px orange;">September</span> follows a long, dry, summer</p>
+        </div>
+         <div id="centered" style="display: flex; flex-flow: row no wrap; justify-content: space-around;">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 50 50"><g><g><path fill="#000000" d="M19.535,31.061h-7.139c-5.658,0-10.263-4.318-10.263-9.626c0-2.601,1.077-5.03,3.026-6.837    c1.845-1.723,4.304-2.708,6.915-2.763c0.009,0,0.021,0,0.031,0c0.665,0,1.214,0.535,1.229,1.206    c0.016,0.679-0.528,1.241-1.203,1.257c-2.008,0.041-3.886,0.786-5.292,2.104c-1.447,1.339-2.241,3.127-2.241,5.034    c0,3.951,3.5,7.163,7.804,7.163h7.134c0.68,0,1.231,0.552,1.231,1.231S20.214,31.061,19.535,31.061z"/></g><g><path fill="black" d="M38.363,31.008c-0.639,0-1.18-0.49-1.227-1.139c-0.053-0.676,0.459-1.268,1.137-1.319    c4-0.296,7.133-3.424,7.133-7.118c0-3.888-3.441-7.098-7.678-7.165c-0.674-0.009-1.219-0.567-1.209-1.246    c0.01-0.676,0.561-1.215,1.232-1.215c0.004,0,0.01,0,0.018,0c5.568,0.085,10.1,4.403,10.1,9.626c0,4.976-4.135,9.178-9.41,9.572    C38.426,31.008,38.395,31.008,38.363,31.008z"/></g><g><path fill="#000000" d="M12.005,14.297c-0.047,0-0.089-0.005-0.136-0.009c-0.673-0.071-1.164-0.678-1.09-1.355    c0.616-5.723,5.067-10.034,10.356-10.034c3.159,0,6.095,1.538,8.066,4.174c0.971-0.578,1.932-0.861,3.061-0.853    c3.143,0,5.973,2.672,6.881,6.539l0.033,0.279c0,0.681-0.551,1.244-1.23,1.244c-0.619,0-1.135-0.45-1.217-1.05    c-0.664-2.695-2.496-4.553-4.486-4.553c-0.838-0.001-1.725,0.341-2.535,1.067l-1.127,1.008l-0.758-1.31    c-1.482-2.56-3.98-4.089-6.687-4.089c-4.029,0-7.43,3.371-7.911,7.839C13.158,13.828,12.626,14.297,12.005,14.297z"/></g><g><path fill="blue" d="M12.944,47.102c-3.316,0-6.015-2.697-6.015-6.012c0-1.502,0.566-2.943,1.589-4.062l4.43-4.664l4.429,4.664    c1.02,1.115,1.582,2.559,1.582,4.062C18.958,44.402,16.26,47.102,12.944,47.102z M10.016,39.084    c-0.405,0.59-0.624,1.285-0.624,2.004c0,1.959,1.594,3.549,3.551,3.549c1.957,0,3.549-1.59,3.549-3.549    c0-0.719-0.216-1.412-0.621-1.998h-0.034l-0.351-0.475l-2.545-2.68L10.016,39.084z"/></g><g><path fill="blue" d="M28.594,43.527c-4.348,0-7.884-3.533-7.884-7.879c0-1.973,0.742-3.867,2.084-5.326l0.041-0.049    c0.034-0.033,0.066-0.072,0.104-0.111l5.656-5.955l5.586,5.877l0,0c0.049,0.051,0.098,0.1,0.141,0.152l0.076,0.086    c1.338,1.459,2.078,3.354,2.078,5.326C36.475,39.994,32.938,43.527,28.594,43.527z M24.294,32.35    c-0.73,0.949-1.124,2.102-1.124,3.299c0,2.986,2.431,5.418,5.423,5.418c2.986,0,5.416-2.432,5.416-5.418    c0-1.182-0.387-2.324-1.094-3.262h-0.072l-0.35-0.492l-3.904-4.11L24.294,32.35z"/></g></svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width= "200px" height="200px" x="0px" y="0px" viewBox="0 0 100 100" ><path stroke-width="3px" stroke="orange" d="M49.576,77.519c-15.196,0-27.559-12.362-27.559-27.559c0-15.196,12.363-27.559,27.559-27.559S77.134,34.764,77.134,49.96  C77.134,65.156,64.771,77.519,49.576,77.519z M49.576,24.401c-14.093,0-25.559,11.465-25.559,25.559  c0,14.093,11.465,25.559,25.559,25.559S75.134,64.053,75.134,49.96C75.134,35.867,63.669,24.401,49.576,24.401z"/><g><path d="M49,18c-0.552,0-1-0.448-1-1V2c0-0.552,0.448-1,1-1s1,0.448,1,1v15C50,17.552,49.552,18,49,18z"/><path d="M49,99c-0.552,0-1-0.447-1-1V83c0-0.553,0.448-1,1-1s1,0.447,1,1v15C50,98.553,49.552,99,49,99z"/><path d="M98,51H83c-0.553,0-1-0.448-1-1s0.447-1,1-1h15c0.553,0,1,0.448,1,1S98.553,51,98,51z"/><path  d="M17,51H2c-0.552,0-1-0.448-1-1s0.448-1,1-1h15c0.552,0,1,0.448,1,1S17.552,51,17,51z"/></g><g><path d="M72.627,26.958c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l10.607-10.607   c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L73.334,26.666C73.139,26.861,72.883,26.958,72.627,26.958z"/><path d="M15.352,84.234c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L25.251,71.92   c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L16.059,83.941C15.863,84.137,15.607,84.234,15.352,84.234z"/><path d="M83.941,84.941c-0.256,0-0.512-0.098-0.707-0.293L72.628,74.042c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0   l10.606,10.606c0.391,0.391,0.391,1.023,0,1.414C84.453,84.844,84.197,84.941,83.941,84.941z"/><path d="M26.666,27.666c-0.256,0-0.512-0.098-0.707-0.293L15.352,16.766c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0   l10.606,10.606c0.391,0.391,0.391,1.023,0,1.414C27.177,27.568,26.921,27.666,26.666,27.666z"/></g><g><path fill="orange" d="M75.076,39.871c-0.394,0-0.768-0.235-0.926-0.623c-0.209-0.511,0.036-1.095,0.548-1.304l11.645-4.756   c0.51-0.208,1.095,0.036,1.304,0.548c0.209,0.511-0.036,1.095-0.548,1.304l-11.645,4.756C75.33,39.846,75.202,39.871,75.076,39.871   z"/><path fill="orange" d="M12.194,65.552c-0.395,0-0.768-0.234-0.926-0.622c-0.209-0.511,0.037-1.095,0.548-1.304l11.645-4.756   c0.511-0.21,1.095,0.036,1.304,0.548c0.209,0.511-0.037,1.095-0.548,1.304l-11.645,4.756C12.448,65.528,12.32,65.552,12.194,65.552   z"/><path fill="orange" d="M64.993,88.373c-0.394,0-0.768-0.234-0.926-0.622l-4.756-11.645c-0.209-0.511,0.036-1.095,0.548-1.304   c0.512-0.211,1.095,0.036,1.304,0.548l4.756,11.645c0.209,0.511-0.036,1.095-0.548,1.304C65.247,88.35,65.119,88.373,64.993,88.373   z"/><path fill="orange" d="M39.312,25.491c-0.395,0-0.768-0.235-0.926-0.623L33.63,13.224c-0.209-0.511,0.037-1.095,0.548-1.304   c0.511-0.21,1.095,0.036,1.304,0.548l4.755,11.645c0.209,0.511-0.037,1.095-0.548,1.304C39.566,25.467,39.438,25.491,39.312,25.491   z"/></g><g><path fill="orange" d="M87.117,66.148c-0.13,0-0.261-0.024-0.388-0.078l-11.598-4.871c-0.509-0.214-0.748-0.8-0.534-1.31   c0.213-0.51,0.801-0.75,1.31-0.534l11.598,4.871c0.509,0.214,0.748,0.8,0.534,1.31C87.879,65.918,87.508,66.148,87.117,66.148z"/><path fill="orange" d="M24.492,39.844c-0.129,0-0.26-0.025-0.387-0.079l-11.597-4.871c-0.509-0.214-0.749-0.8-0.535-1.309s0.798-0.75,1.309-0.535   l11.597,4.871c0.509,0.214,0.749,0.8,0.535,1.309C25.254,39.613,24.883,39.844,24.492,39.844z"/><path fill="orange" d="M34.093,88.444c-0.129,0-0.26-0.024-0.387-0.078c-0.509-0.214-0.749-0.8-0.535-1.31l4.872-11.598   c0.213-0.508,0.799-0.752,1.309-0.534c0.509,0.214,0.749,0.8,0.535,1.31l-4.872,11.598C34.854,88.214,34.483,88.444,34.093,88.444z   "/><path fill="orange" d="M60.398,25.82c-0.13,0-0.261-0.025-0.388-0.079c-0.509-0.214-0.748-0.8-0.534-1.309l4.871-11.597   c0.213-0.51,0.799-0.75,1.31-0.535c0.509,0.214,0.748,0.8,0.534,1.309L61.32,25.207C61.16,25.59,60.789,25.82,60.398,25.82z"/></g></svg>
+        </div>
+        <p> One thing about rain -- it makes things, like the grassy surface underneath the PHRSC experiment -- <b style="text-shadow: 2px 2px 2px black; color: white">reflective</b>. And one thing about the controlled experiments in the literature which specify the 3 C threshold : they also specify that the surface beneath a non-aspirated temperature probe must be <span style="text-shadow: 2px 2px 2px #F06D06; color: wheat">dry</span> and <span style="text-shadow: 2px 2px 2px #F06D06; color: wheat">dirt</span>, else <b style="text-shadow: 2px 2px 2px black; color: white">albedo</b> will affect the probe</p>
+    </div>
+
+    <div id="slide21" class="step" data-x="4300" data-y="2000" data-rotate="20" data-scale="3">
+        <p>Thankfully, we looked <b>down.</b></p>
+        <p style="padding-bottom: 5%; text-align:right; font-size:70%"> For non-night (after 5 pm and before 9 am) hours in the years 2011-2014, the number of 5-minute measurements of outgoing radiation that is greater than simultaneous incoming radiation is graphed by numerical month.</p>
+        <div id="some-more-data" width="650px" height="650px" style="display:flex; flex-flow: row no wrap; justify-content: space-around;"></div>
+        <script>
+        var width = 400;
+        var height = 400;
+
+        var data = [{
+          "month": "january",
+          "value": 4471
+        }, {
+          "month": "february",
+          "value": 2573
+        }, {
+          "month": "march",
+          "value": 2467,
+        }, {
+          "month": "april",
+          "value": 1506,
+        }, {
+          "month": "may",
+          "value": 1326,
+        }, {
+          "month": "june",
+          "value": 1274,
+        }, {
+          "month": "july",
+          "value": 1402,
+        }, {
+          "month": "august",
+          "value": 1560,
+        }, {
+          "month": "september",
+          "value": 1863,
+        }, {
+          "month": "october",
+          "value": 2719,
+        }, {
+          "month": "november",
+          "value": 3445,
+        }, {
+          "month": "december",
+          "value": 4506,
+        }];
+
+        var minVal;
+        var maxVal;
+
+        minVal = d3.min(data, function(d) { return d.value; });
+        maxVal = d3.max(data, function(d) { return d.value; });
+
+        var x = d3.scale.linear()
+        .domain([0, 11])
+        .range([0, width]);
+
+        var y = d3.scale.linear()
+        .domain([minVal, maxVal])
+        .range([0, height]);
+
+        var svg = d3.select("#some-more-data")
+          .append("svg")
+          .attr("width", width)
+          .attr("height", height);
+
+        svg.selectAll("rect")
+          .data(data)
+          .enter()
+          .append("rect")
+          .attr("x", function(d, i) {
+            return x(i)+10;
+          })
+          .attr("y", function(d) {
+            return height-y(d.value)-40;
+          })
+          .attr("width", 30)
+          .attr("height", function(d){
+          return y(d.value);
+        })
+          .style("stroke", "red")
+          .style("fill", "orange")
+          .style("stroke-width", "2px");
+
+        var xAxisGroup = svg.append("g")
+         .attr("class", "x axis")
+              .attr("transform", "translate(-20," + 360 + ")")
+              .call(d3.svg.axis().scale(x).orient("bottom").ticks(4));
+                </script>
+    <p style="font-size:70%;">In the dry summer, almost no daytime out-going radation exceeds incoming; but in the winter, outgoing radiation can (and does) exceed incoming. For scale, 2011-2014 January has 4471 5-minute values where outgoing daytime radiation exceeds incoming. </p>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>In fact, in PRIMET's history, less than 10% of relative humidity values in March are less than 90%. In September, 79% of relative humidity values are less than 90%, so if you follow this thought, you might suggest...</p>
+    </div>
+
+    <!--
+        
+        And the last one shows full power and flexibility of impress.js.
+        
+        You can not only position element in 3D, but also rotate it around any axis.
+        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
+        10 degrees (clockwise) around Y axis.
+        
+        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
+        as `data-rotate` (these two are basically aliases).
+        
+    -->
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">So we might hypothesize that</span> <span class="you" style="color:blue;">rain</span> <span class="noticed">coupled with</span> <span class="its"> heat </span> <span class="in">from radiation</span> <b>creates albedo effects and increases local humidity, </b> </p>
+        <span class="footnote">which could lead to an open-bottomed shield being more a problem than a protection</span>
+    </div>
+
+
+    <div id="slide23" class="step" data-x="8700" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <div style="display:flex; flex-flow: row wrap; justify-content: space-around;">
+            <p style="color: #F06D06; text-shadow: 1px 1px 1px black;"> So the moral of this data "story": we may never know if <span style="color:black;">43 C</span> is a <span style="color:black;">normal</span> temperature for <span style="color:black;">a September at PRIMET</span>. But we do know that our perception of "normal" is based on our equipment, and the various shields we've had installed for the past 30 + years have not necessarily told the site's story from the same perspective. Thanks to PHRSC, we can finally </p>
+            <p style="font-size: 120%"> ZOOM OUT.</p>
+        </div>
+    </div>
+
+    <!--
+        
+        So to summarize of all the possible attributes used to position presentation steps, we have:
+        
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+        
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+        
+    -->
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<!--
+    
+    Hint is not related to impress.js in any way.
+    
+    But it can show you how to use impress.js features in creative way.
+    
+    When the presentation step is shown (selected) its element gets the class of "active" and the body element
+    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+    
+    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+    the first step of presentation is visible for a couple of seconds.
+    
+    ...
+    
+    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+    It's just a quick and dirty workaround to get different hint text for touch devices.
+    In a real world it should be at least placed in separate JS file ... and the touch content should be
+    probably just hidden somewhere in HTML - not hard-coded in the script.
+    
+    Just sayin' ;)
+    
+-->
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<!--
+    
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+    
+    In here I just include full source of the script to make it more readable.
+    
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+    
+-->
+<script src="impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+    
+    The `impress()` function also gives you access to the API that controls the presentation.
+    
+    Just store the result of the call:
+    
+        var api = impress();
+    
+    and you will get three functions you can call:
+    
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+    
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+    
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+    
+-->
+
+</body>
+</html>
+
